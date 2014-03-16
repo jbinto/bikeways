@@ -1,141 +1,19 @@
-Bikeways
-=========
+# Bikeways
 
-This application was generated with the [rails_apps_composer](https://github.com/RailsApps/rails_apps_composer) gem
-provided by the [RailsApps Project](http://railsapps.github.io/).
+## Overview
 
-Diagnostics
------------
+This is the source code for the Toronto Bikeways Guide located at http://416.bike/
 
-This application was built with recipes that are known to work together.
+This is a web application which provides user-contributed information about Toronto's bikeway  system. It is created in response to a complete lack of information about Toronto's numbered bike system.
 
-This application was built with preferences that are NOT known to work
-together.
+It will be seeded with a significant amount of original content (both route research & photography). All information will be licensed under a Creative Commons style license (specifics to be determined).
 
-If the application doesn’t work as expected, please [report an issue](https://github.com/RailsApps/rails_apps_composer/issues)
-and include these diagnostics:
+This is a work in progress. Contributions are welcome. 
 
-We’d also like to know if you’ve found combinations of recipes or
-preferences that do work together.
+* Trello: https://trello.com/b/ECtnzN5B/bikeways
+* Contact: hello@jessebuchanan.ca
 
-Recipes:
+## Additional resources
 
-* apps4
-* controllers
-* core
-* email
-* extras
-* frontend
-* gems
-* git
-* init
-* models
-* prelaunch
-* railsapps
-* readme
-* routes
-* saas
-* setup
-* testing
-* views
+[City of Toronto - Cycling Map](http://www1.toronto.ca/wps/portal/contentonly?vgnextoid=42b3970aa08c1410VgnVCM10000071d60f89RCRD)
 
-Preferences:
-
-* git: true
-* apps4: none
-* dev_webserver: thin
-* prod_webserver: unicorn
-* database: postgresql
-* templates: haml
-* unit_test: minitest
-* integration: minitest-capybara
-* continuous_testing: guard
-* fixtures: factory_girl
-* frontend: foundation5
-* email: gmail
-* authentication: none
-* authorization: none
-* form_builder: simple_form
-* starter_app: home_app
-* rvmrc: false
-* quiet_assets: true
-* local_env_file: figaro
-* better_errors: true
-* ban_spiders: true
-* github: true
-
-Ruby on Rails
--------------
-
-This application requires:
-
--   Ruby
--   Rails
-
-Learn more about [Installing Rails](http://railsapps.github.io/installing-rails.html).
-
-Database
---------
-
-This application uses PostgreSQL with ActiveRecord.
-
-Development
------------
-
--   Template Engine: Haml
--   Testing Framework: Test::Unit
--   Front-end Framework: Zurb Foundation 5
--   Form Builder: SimpleForm
--   Authentication: None
--   Authorization: None
--   Admin: None
-
-Email
------
-
-The application is configured to send email using a Gmail account.
-
-Email delivery is disabled in development.
-
-Getting Started
----------------
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-
-Documentation and Support
--------------------------
-
-This is the only documentation.
-
-#### Issues
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-
-Similar Projects
-----------------
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-
-Contributing
-------------
-
-If you make improvements to this application, please share with others.
-
--   Fork the project on GitHub.
--   Make your feature addition or bug fix.
--   Commit with Git.
--   Send the author a pull request.
-
-If you add functionality to this application, create an alternative
-implementation, or build an application that is similar, please contact
-me and I’ll add a note to the README so that others can find your work.
-
-Credits
--------
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-
-License
--------
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
