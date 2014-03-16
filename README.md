@@ -15,7 +15,7 @@ This is a work in progress. Contributions are welcome.
 
 ## Original research
 
-See the [doc](https://github.com/jbinto/bikeways/doc) directory for original research (e.g. route information.)
+See the [doc](https://github.com/jbinto/bikeways/tree/master/doc) directory for original research (e.g. route information.)
 
 ## Additional resources
 
