@@ -13,11 +13,11 @@ The following types are included:
 * Shared Roadways (Signed, on-street routes) -> rgb(90,141,198)	
 * Major Multi-use Pathway -> rgb(105,78,154)	
 * Minor Multi-use Pathway -> rgb(105,78,154) thin
-* Informal Dirt Footpath -> rgb(105,78,154) thing dotted
+* Informal Dirt Footpath -> rgb(105,78,154) thin dashed
 * Park Road Cycling Connections ->rgb(151,153,155)	
-* Suggested On-Street Routes (Quiet residential streets) -> rgb(90,141,198)	
-* Connections (Suggested links between off-road paths and other bikeways, or across major barriers, such as 400 series highways. May entail travel on busy, major roads.) -> rgb(246,150,65)
-* Downtown Explorer Route -> rgb(254,230,105)
+* Suggested On-Street Routes (Quiet residential streets) -> rgb(90,141,198)	dashed
+* Connections (Suggested links between off-road paths and other bikeways, or across major barriers, such as 400 series highways. May entail travel on busy, major roads.) -> rgb(246,150,65) thin dashed
+* Downtown Explorer Route -> rgb(254,230,105) thick
 
 The map also includes the following points of interest:
 
