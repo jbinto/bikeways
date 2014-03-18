@@ -12,6 +12,8 @@ Each POI includes the following attributes:
 
 ## West Humber Trail
 
+*NOTE:* This appears to be considered Route 40, if this [street view](https://www.google.ca/maps/@43.728473,-79.591935,3a,15y,160.1h,90.56t/data=!3m4!1e1!3m2!1s2koeL4TXa3E-7zyomThYyg!2e0) image is to be believed. Route numbers are conspicuously absent from the official Toronto map.
+
 ### Points of interest
 
 * (#1 B2) Entrance: Finch Av W. and 427 -> Can enter via dirt shoulder on north side of Finch. Goes down a hill and you can immediately cross underneath the Finch underpass. See [street view](https://www.google.ca/maps/@43.734828,-79.6241,3a,89.8y,318.9h,76.46t/data=!3m4!1e1!3m2!1sCXRSMI_b3VMEliiLdaUy9g!2e0!5m1!1e3). 
@@ -32,5 +34,5 @@ Each POI includes the following attributes:
 
 * (#1 D4) Entrance: Alicewood Ct, near #35. Google Maps seems to have incorrectly attributed a path where there is none (or Street View is incorrect). [Street View](https://www.google.ca/maps/@43.726532,-79.593682,3a,43.6y,210.21h,88.13t/data=!3m4!1e1!3m2!1sGdMDjraFNfm5d8YM_2IzOQ!2e0), [Map](https://www.google.ca/maps/place/43%C2%B043'35.5%22N+79%C2%B035'37.6%22W/@43.7260697,-79.5939527,18z/data=!4m2!3m1!1s0x0:0x0)
 
-* (#1 D5) Entrance: Turnvale Rd. Connects with the **suggested on-street route to East Humber Trail**. [Street view](https://www.google.ca/maps/@43.728473,-79.591935,3a,75y,151.23h,92.97t/data=!3m4!1e1!3m2!1s2koeL4TXa3E-7zyomThYyg!2e0!5m1!1e3), [Map](https://www.google.ca/maps/place/43%C2%B043'42.5%22N+79%C2%B035'31.1%22W/@43.7285177,-79.5917161,19z/data=!4m2!3m1!1s0x0:0x0)
+* (#1 D5) Connection/Entrance: Turnvale Rd. Connects with the **suggested on-street route to East Humber Trail**. [Street view](https://www.google.ca/maps/@43.728473,-79.591935,3a,75y,151.23h,92.97t/data=!3m4!1e1!3m2!1s2koeL4TXa3E-7zyomThYyg!2e0!5m1!1e3), [Map](https://www.google.ca/maps/place/43%C2%B043'42.5%22N+79%C2%B035'31.1%22W/@43.7285177,-79.5917161,19z/data=!4m2!3m1!1s0x0:0x0)
 
