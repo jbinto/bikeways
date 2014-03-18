@@ -20,5 +20,5 @@ Reference: [Tile 1](http://www1.toronto.ca/City%20Of%20Toronto/Transportation%20
 
 **NOTE:** The bike map describes an unknown "minor multiuse pathway", running north-south along the west side of Kipling Av, between Finch Av W and Steeles Av W. This isn't listed on the Google Maps bicycling layer, nor is it visible on street view. This needs further research. 
 
-* (+150m) Immediately turn left at the gap in the median and continue on the sidewalk for a few metres. Go down the hill into the ravine. You are now on **East Humber Trail**.
+* (+150m) Immediately turn left at the gap in the median and continue on the sidewalk for a few metres. Go down the hill into the ravine. [Street view](https://www.google.ca/maps/@43.751056,-79.585012,3a,31.9y,53.05h,82.88t/data=!3m4!1e1!3m2!1sWLJ3jTHDUhNPqHS4yPKXmg!2e0). You are now on **East Humber Trail**.
 
