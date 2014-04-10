@@ -84,3 +84,7 @@ pickle-email-*.html
 
 # Ignore application configuration
 /config/application.yml
+
+# Ignore Toronto bikeway data. It's too big to put in git.
+# Use the rake task to generate it.
+vendor/opendata

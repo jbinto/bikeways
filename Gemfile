@@ -31,6 +31,14 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'thin'
   gem 'pry-rails'
+
+  # for reading shapefiles
+  gem 'rubyzip', '>= 1.0.0'
+  gem 'rgeo-shapefile'
+  gem 'dbf'
+
+  # for making HTTP requests less dense
+  gem 'httparty'
 end
 group :test do
   gem 'capybara'
