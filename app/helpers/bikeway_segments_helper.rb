@@ -1,0 +1,2 @@
+module BikewaySegmentsHelper
+end
