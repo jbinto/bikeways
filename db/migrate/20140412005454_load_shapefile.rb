@@ -19,7 +19,7 @@ class LoadShapefile < ActiveRecord::Migration
         BikewaySegment.create do |s|
           s.city_rid = record["RID"]
           s.city_geo_id = record["GEO_ID"]
-          s.city_linear_feature_name_id = record["LF_NAME_ID"]
+          s.city_linear_feature_name_id = record["LFN_ID"]
           s.city_object_id = record["OBJECTID"]
           s.full_street_name = record["LF_NAME"]
           s.address_left = record["ADDRESS_L"]
