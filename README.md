@@ -21,3 +21,29 @@ See the [doc](https://github.com/jbinto/bikeways/tree/master/doc) directory for 
 
 [City of Toronto - Cycling Map](http://www1.toronto.ca/wps/portal/contentonly?vgnextoid=42b3970aa08c1410VgnVCM10000071d60f89RCRD)
 
+## Usage
+
+Prerequisites:
+
+* Ruby 2.1.1
+* Rails 4.1
+* Postgresql 9.3
+* PostGIS 2.1.1
+
+See [jbinto/ansible-ubuntu-rails-server](https://github.com/jbinto/ansible-ubuntu-rails-server) for an Ansible playbook to get an environment up and running quickly.
+
+Installation:
+
+Using [pow](http://pow.cx/) and [powder](https://github.com/rodreegez/powder).
+
+```
+git clone https://github.com/jbinto/bikeways.git
+cd bikeways
+rake db:create
+
+# download the opendata files to vendor/opendata
+rake bikeways:getopendata
+
+# load the shapefile into postgis, amongst other migrations
+rake db:migrate
+```
