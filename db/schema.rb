@@ -11,11 +11,34 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140410215702) do
+ActiveRecord::Schema.define(version: 20140412005454) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
   enable_extension "postgis"
+
+  create_table "bikeway_segments", force: true do |t|
+    t.integer  "city_rid"
+    t.integer  "city_geo_id"
+    t.integer  "city_linear_feature_name_id"
+    t.integer  "city_object_id"
+    t.string   "full_street_name"
+    t.string   "address_left"
+    t.string   "address_right"
+    t.string   "odd_even_flag_left"
+    t.string   "odd_even_flag_right"
+    t.integer  "lowest_address_left"
+    t.integer  "lowest_address_right"
+    t.integer  "highest_address_left"
+    t.integer  "highest_address_right"
+    t.integer  "from_intersection_id"
+    t.integer  "to_intersection_id"
+    t.string   "street_classification"
+    t.string   "bikeway_type"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.spatial  "geom",                        limit: {:srid=>2019, :type=>"geometry"}
+  end
 
   create_table "locations", force: true do |t|
     t.string   "name"
