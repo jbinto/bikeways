@@ -51,3 +51,5 @@ gem 'activerecord-postgis-adapter',
   github: 'neighborland/activerecord-postgis-adapter'
 
 gem 'rgeo'
+
+gem 'jquery-datatables-rails', git: 'git://github.com/jbinto/jquery-datatables-rails.git'

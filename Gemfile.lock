@@ -1,4 +1,12 @@
 GIT
+  remote: git://github.com/jbinto/jquery-datatables-rails.git
+  revision: 01905c119e2a3105b38bb4ef9f2c047d7f59667b
+  specs:
+    jquery-datatables-rails (1.12.2)
+      jquery-rails
+      sass-rails
+
+GIT
   remote: git://github.com/neighborland/activerecord-postgis-adapter.git
   revision: 3709fac7d48486575a059b46d37ffa3ad73c3849
   specs:
@@ -280,6 +288,7 @@ DEPENDENCIES
   html2haml
   httparty
   jbuilder (~> 2.0)
+  jquery-datatables-rails!
   jquery-rails
   pg
   pry-rails
