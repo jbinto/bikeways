@@ -39,6 +39,9 @@ group :development, :test do
 
   # for making HTTP requests less dense
   gem 'httparty'
+
+  gem 'annotate', '>=2.6.0'
+
 end
 group :test do
   gem 'capybara'
