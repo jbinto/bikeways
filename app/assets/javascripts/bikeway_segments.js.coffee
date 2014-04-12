@@ -1,4 +1,4 @@
-  # Synthesized from:
+# Synthesized from:
 # http://railscasts.com/episodes/340-datatables
 # http://technpol.wordpress.com/2013/06/10/rails-and-datatables-lazy-loading-and-using-a-single-controller/
 

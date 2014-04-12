@@ -57,3 +57,6 @@ gem 'jquery-datatables-rails', git: 'git://github.com/jbinto/jquery-datatables-r
 
 # http://railscasts.com/episodes/340-datatables
 gem 'will_paginate'
+
+# Make it so we don't have to do anything funky with jquery.
+gem 'jquery-turbolinks'
