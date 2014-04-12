@@ -49,7 +49,7 @@ class BikewaySegmentsDatatable
 
   def fetch_segments
     segments = BikewaySegment.order("#{sort_column} #{sort_direction}")
-    segments = BikewaySegment.page(page).per_page(per_page)
+    segments = segments.page(page).per_page(per_page)
     if params[:sSearch].present?
       segments = segments.where('' \
         'full_street_name like :search' \
