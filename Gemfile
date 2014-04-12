@@ -41,14 +41,12 @@ group :development, :test do
   gem 'httparty'
 
   gem 'annotate', '>=2.6.0'
-
 end
 group :test do
   gem 'capybara'
   gem 'database_cleaner', '1.0.1'
   gem 'email_spec'
 end
-
 
 gem 'activerecord-postgis-adapter',
   github: 'neighborland/activerecord-postgis-adapter'

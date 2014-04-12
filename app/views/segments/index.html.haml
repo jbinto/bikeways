@@ -1,0 +1,43 @@
+%h1 Bikeway Segments
+%table#segments.table.table-condensed.table-bordered.table-hover
+  %thead
+    %tr
+      %th bikeway_type
+      %th id
+      %th city_rid
+      %th city_geo_id
+      %th city_linear_feature_name_id
+      %th city_object_id
+      %th full_street_name
+      %th address_left
+      %th address_right
+      %th odd_even_flag_left
+      %th odd_even_flag_right
+      %th lowest_address_left
+      %th lowest_address_right
+      %th highest_address_left
+      %th highest_address_right
+      %th from_intersection_id
+      %th to_intersection_id
+      %th street_classification
+  %tbody
+    - @segments.each do |segment|
+      %tr
+        %td= segment.bikeway_type
+        %td= segment.id
+        %td= segment.city_rid
+        %td= segment.city_geo_id
+        %td= segment.city_linear_feature_name_id
+        %td= segment.city_object_id
+        %td= segment.full_street_name
+        %td= segment.address_left
+        %td= segment.address_right
+        %td= segment.odd_even_flag_left
+        %td= segment.odd_even_flag_right
+        %td= segment.lowest_address_left
+        %td= segment.lowest_address_right
+        %td= segment.highest_address_left
+        %td= segment.highest_address_right
+        %td= segment.from_intersection_id
+        %td= segment.to_intersection_id
+        %td= segment.street_classification
