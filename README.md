@@ -34,7 +34,7 @@ See [jbinto/ansible-ubuntu-rails-server](https://github.com/jbinto/ansible-ubunt
 
 Installation:
 
-Using [pow](http://pow.cx/) and [powder](https://github.com/rodreegez/powder).
+For OS X, install [pow](http://pow.cx/) and [powder](https://github.com/rodreegez/powder).
 
 ```
 git clone https://github.com/jbinto/bikeways.git
@@ -46,4 +46,8 @@ rake bikeways:getopendata
 
 # load the shapefile into postgis, amongst other migrations
 rake db:migrate
+
+powder link
+# should be available at http://bikeways.dev/
 ```
+
