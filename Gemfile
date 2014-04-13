@@ -60,3 +60,5 @@ gem 'will_paginate'
 
 # Make it so we don't have to do anything funky with jquery.
 gem 'jquery-turbolinks'
+
+gem 'gmaps4rails'

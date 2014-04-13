@@ -102,6 +102,7 @@ GEM
     fastercsv (1.5.5)
     ffi (1.9.3)
     formatador (0.2.4)
+    gmaps4rails (2.1.2)
     guard (2.6.0)
       formatador (>= 0.2.4)
       listen (~> 2.7)
@@ -289,6 +290,7 @@ DEPENDENCIES
   devise
   email_spec
   factory_girl_rails
+  gmaps4rails
   guard-bundler
   guard-rails
   guard-rspec
