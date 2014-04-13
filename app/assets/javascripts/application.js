@@ -1,25 +1,25 @@
-// This is a manifest file that'll be compiled into application.js, which will include all the files
-// listed below.
-//
-// Any JavaScript/Coffee file within this directory, lib/assets/javascripts, vendor/assets/javascripts,
-// or vendor/assets/javascripts of plugins, if any, can be referenced here using a relative path.
-//
-// It's not advisable to add code directly here, but if you do, it'll appear at the bottom of the
-// compiled file.
-//
-// Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
-// about supported directives.
-//
 //= require jquery
-//= require jquery.turbolinks
 //= require jquery_ujs
-//= require turbolinks
 //= require bootstrap
 //= require underscore
 //= require gmaps/google
+//= require gistyle
 //= require_tree .
 
+// XXX make this only required on the bikeway_segments#index page
 //= require dataTables/jquery.dataTables
 //= require dataTables/jquery.dataTables.bootstrap3
 
+// I have come to the conclusion that Turbolinks is evil.
+//
+// To be fair, I gave it a chance. I listened on 'page:load', I used `jquery-turbolinks`,
+// but it doesn't play nicely with the gmaps4rails gem and the maintainer of that gem has
+// arrived at the same conclusion as I.
+//
+// It breaks the Principle of Least Astonishment which is very un-Ruby like.
+// Whereas I could test my pages before in isolation, now I need to build up crufty state
+// to cause application breakage. ("It only breaks when you go from here, to there, THEN here".
+//
+// This note left for posterity.
+//  require turbolinks
 

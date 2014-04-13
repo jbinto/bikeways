@@ -1,11 +1,21 @@
-// Place all the styles related to the BikewaySegments controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+// This is because Bootstrap uses box-sizing: border-box
+// (.. and Google Maps doesn't)
+// See http://getbootstrap.com/getting-started/#third-parties
+.google-map-canvas,
+.google-map-canvas * {
+  @include box-sizing(content-box);
+}
 
-.map-container {
+.google-map-canvas {
   width: 800px;
   #map {
     height: 400px;
+  }
+
+  // This fixes broken Google Maps: http://i.imgur.com/eP9r8QM.png
+  // https://github.com/twbs/bootstrap/issues/1552
+  img {
+    max-width: none;
   }
 }
 

@@ -5,7 +5,6 @@ gem 'sass-rails', '~> 4.0.3'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
-gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
@@ -58,8 +57,10 @@ gem 'jquery-datatables-rails', git: 'git://github.com/jbinto/jquery-datatables-r
 # http://railscasts.com/episodes/340-datatables
 gem 'will_paginate'
 
-# Make it so we don't have to do anything funky with jquery.
-gem 'jquery-turbolinks'
-
 gem 'gmaps4rails'
 gem 'underscore-rails'
+
+# "Garber-Irish" style JavaScript.
+# Allows per-page JavaScript in rails. JS boilerplate simple enough but hidden in this gem.
+# See https://github.com/tonytonyjan/gistyle and http://viget.com/inspire/extending-paul-irishs-comprehensive-dom-ready-execution
+gem 'gistyle'
