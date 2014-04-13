@@ -11,3 +11,25 @@ jQuery ->
     sAjaxSource: $('#segments').data('source')
     bStateSave: true
     bDeferRender: true
+
+  map = $('#map')
+  return unless map?
+
+  handler = Gmaps.build('Google')
+  opts =
+    provider: {}
+    internal: { id: 'map' }
+  handler.buildMap(opts, ->
+    markers = handler.addMarkers([
+      lat: 0
+      lng: 0
+      picture:
+        url: "http://placekitten.com/36/36"
+        width: 36
+        height: 36
+      ,
+      infowindow: "hello!"
+    ])
+    handler.bounds.extendWith(markers)
+    handler.fitMapToBounds()
+  )

@@ -11,4 +11,8 @@ class BikewaySegmentsController < ApplicationController
       }
     end
   end
+
+  def show
+    @segment = BikewaySegment.find params[:id]
+  end
 end

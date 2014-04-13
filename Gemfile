@@ -62,3 +62,4 @@ gem 'will_paginate'
 gem 'jquery-turbolinks'
 
 gem 'gmaps4rails'
+gem 'underscore-rails'
