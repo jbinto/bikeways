@@ -24,22 +24,16 @@ APP.bikeway_segments =
   show: ->
     $ ->
       console.log "enter bikeway_segments#show"
+      kmlUrl = $('#map').data('kml-url')
       handler = Gmaps.build('Google')
       opts =
         provider: {}
         internal: { id: 'map' }
       handler.buildMap(opts, ->
-        markers = handler.addMarkers([
-          lat: 0
-          lng: 0
-          picture:
-            url: "http://placekitten.com/36/36"
-            width: 36
-            height: 36
-          ,
-          infowindow: "hello!"
-        ])
-        handler.bounds.extendWith(markers)
-        handler.fitMapToBounds()
+        kmls = handler.addKml(
+          { url: kmlUrl }
+        )
+        # handler.bounds.extendWith(markers)
+        # handler.fitMapToBounds()
       )
       console.log "exit bikeway_segments#show"

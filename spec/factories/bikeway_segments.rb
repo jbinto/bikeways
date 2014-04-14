@@ -29,23 +29,23 @@
 
 FactoryGirl.define do
   factory :bikeway_segment do
-    city_id 1
+    city_rid 1
     city_geo_id 1
-    linear_feature_name_id 1
-    full_street_name "MyString"
-    address_left "MyString"
-    address_right "MyString"
-    odd_even_flag_left "MyString"
-    odd_even_flag_right "MyString"
-    lowest_address_left 1
-    lowest_address_right 1
-    highest_address_left 1
-    highest_address_right 1
-    from_intersection_id 1
-    to_intersection_id 1
-    street_classification "MyString"
+    city_linear_feature_name_id 1
     city_object_id 1
-    bikeway_type "MyString"
-    geom ""
+    full_street_name "Yonge St"
+    address_left "34-40"
+    address_right "41-49"
+    odd_even_flag_left "E"
+    odd_even_flag_right "O"
+    lowest_address_left 34
+    lowest_address_right 41
+    highest_address_left 40
+    highest_address_right 49
+    from_intersection_id 10000
+    to_intersection_id 20000
+    street_classification "Arterial"
+    bikeway_type "Bike Lane"
+    geom "MULTILINESTRING ((303000.000 4827000.000, 302000.00 4827000.00))"
   end
 end

@@ -15,7 +15,7 @@
     %td= "unknown"
 
 .google-map-canvas
-  #map
+  #map{data: { kml_url: @kml_url }}
 
 %script{src: '//maps.google.com/maps/api/js?v=3.13&sensor=false&libraries=geometry'}
 %script{src: '//google-maps-utility-library-v3.googlecode.com/svn/tags/markerclustererplus/2.0.14/src/markerclusterer_packed.js'}
