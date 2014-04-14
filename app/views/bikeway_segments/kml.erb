@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+  <Style id="blueLine">
+    <LineStyle>
+      <color>ffff0000</color>
+      <width>4</width>
+    </LineStyle>
+  </Style>
+
+  <Placemark>
+    <name><%= @segment.id %></name>
+    <styleUrl>#blueLine</styleUrl>
+    <%= raw @segment.kml %>
+  </Placemark>
+</Document>
+</kml>
