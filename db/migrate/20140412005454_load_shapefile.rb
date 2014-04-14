@@ -5,8 +5,8 @@ class LoadShapefile < ActiveRecord::Migration
   def up
     BikewaySegment.delete_all
 
-    factory = RGeo::Geographic.spherical_factory(:srid => 2019)
-    RGeo::Shapefile::Reader.open('vendor/opendata/CENTRELINE_BIKEWAY_OD', :factory => factory) do |file|
+    #factory = RGeo::Geographic.spherical_factory(:srid => 2019)
+    RGeo::Shapefile::Reader.open('vendor/opendata/CENTRELINE_BIKEWAY_OD', :srid => 2019) do |file|
       index = 0
       file.each do |record|
         index += 1
