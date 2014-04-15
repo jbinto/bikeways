@@ -1,5 +1,11 @@
 source 'https://rubygems.org'
 ruby '2.1.1'
+
+# It's a little roundabout.
+# Since Rails 4.1, secrets defined in secrets.yml. But in production, they go to ENV.
+# Using this gem, ENV will be populated with the contents of the .env file.
+gem 'dotenv-rails'
+
 gem 'rails', '4.1.0'
 gem 'sass-rails', '~> 4.0.3'
 gem 'uglifier', '>= 1.3.0'
@@ -67,4 +73,3 @@ gem 'underscore-rails'
 # Allows per-page JavaScript in rails. JS boilerplate simple enough but hidden in this gem.
 # See https://github.com/tonytonyjan/gistyle and http://viget.com/inspire/extending-paul-irishs-comprehensive-dom-ready-execution
 gem 'gistyle'
-
