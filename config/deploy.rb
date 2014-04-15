@@ -23,9 +23,12 @@ set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public
 # Depends on lib/capistrano/tasks/run_tests.cap
 set :tests, ["spec"]
 
+# See http://capistranorb.com/documentation/getting-started/flow/ 
+# for event flow lifecycle
 namespace :deploy do
   before :deploy, "deploy:check_revision"
   before :deploy, "deploy:run_tests"
+  before 'deploy:migrate', 'bikeways:getopendata'
   after 'deploy:symlink:shared', 'deploy:compile_assets_locally'
   after :finishing, 'deploy:cleanup'
 
