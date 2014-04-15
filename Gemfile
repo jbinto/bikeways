@@ -40,6 +40,9 @@ group :development, :test do
   gem 'httparty'
 
   gem 'annotate', '>=2.6.0'
+
+  gem 'capistrano',  '~> 3.1'
+  gem 'capistrano-rails', '~> 1.1'
 end
 group :test do
   gem 'capybara'
@@ -64,3 +67,4 @@ gem 'underscore-rails'
 # Allows per-page JavaScript in rails. JS boilerplate simple enough but hidden in this gem.
 # See https://github.com/tonytonyjan/gistyle and http://viget.com/inspire/extending-paul-irishs-comprehensive-dom-ready-execution
 gem 'gistyle'
+
