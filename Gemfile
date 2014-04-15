@@ -42,9 +42,6 @@ group :development, :test do
   gem 'rgeo-shapefile'
   gem 'dbf'
 
-  # for making HTTP requests less dense
-  gem 'httparty'
-
   gem 'annotate', '>=2.6.0'
 
   gem 'capistrano',  '~> 3.1'
@@ -73,3 +70,6 @@ gem 'underscore-rails'
 # Allows per-page JavaScript in rails. JS boilerplate simple enough but hidden in this gem.
 # See https://github.com/tonytonyjan/gistyle and http://viget.com/inspire/extending-paul-irishs-comprehensive-dom-ready-execution
 gem 'gistyle'
+
+# for making HTTP requests less dense
+gem 'httparty'
