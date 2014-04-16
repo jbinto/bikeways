@@ -33,9 +33,14 @@ end
 
 
 namespace :deploy do
+  desc "Run rake task to get bikeways opendata"
+  task :getopendata do
+    run "cd '#{current_path}' && #{rake} bikeways:getopendata RAILS_ENV=#{rails_env}"
+  end
+
   before :deploy, "deploy:check_revision"
   before :deploy, "deploy:run_tests"
-  before 'deploy:migrate', 'bikeways:getopendata'
+  before 'deploy:migrate', 'deploy:getopendata'
   after 'deploy:symlink:shared', 'deploy:compile_assets_locally'
   after :finishing, 'deploy:cleanup'
 
