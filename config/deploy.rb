@@ -25,6 +25,13 @@ set :tests, ["spec"]
 
 # See http://capistranorb.com/documentation/getting-started/flow/ 
 # for event flow lifecycle
+namespace :bikeways do
+  task :getopendata do
+    rake 'bikeways:getopendata'
+  end
+end
+
+
 namespace :deploy do
   before :deploy, "deploy:check_revision"
   before :deploy, "deploy:run_tests"

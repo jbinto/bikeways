@@ -17,6 +17,7 @@ namespace :bikeways do
   task getopendata: :environment do
     if File.exists?(BIKEWAYS_FILE)
       puts "#{BIKEWAYS_FILE} already exists, please delete to redownload"
+      next    # n.b. can't `return` from a rake task, ruby explodes
     end
 
     # download

@@ -12,3 +12,6 @@ Dir.glob('lib/capistrano/tasks/*.cap').each { |r| import r }
 
 # Load helper functions from lib/capistrano.
 Dir.glob('lib/capistrano/**/*.rb').each { |r| import r }
+
+# Load application rake tasks from tasks/
+Dir.glob('tasks/*.rake').each { |r| import r }
