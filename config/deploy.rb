@@ -23,7 +23,7 @@ set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public
 # Depends on lib/capistrano/tasks/run_tests.cap
 set :tests, ["spec"]
 
-# See http://capistranorb.com/documentation/getting-started/flow/ 
+# See http://capistranorb.com/documentation/getting-started/flow/
 # for event flow lifecycle
 namespace :bikeways do
   task :getopendata do
@@ -35,7 +35,7 @@ end
 namespace :deploy do
   desc "Run rake task to get bikeways opendata"
   task :getopendata do
-    run "cd '#{current_path}' && bundle exec rake bikeways:getopendata RAILS_ENV=#{rails_env}"
+    run "cd '#{current_path}' && bundle exec rake bikeways:getopendata RAILS_ENV=#{stage}"
   end
 
   before :deploy, "deploy:check_revision"
