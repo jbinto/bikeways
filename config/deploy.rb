@@ -35,7 +35,7 @@ end
 namespace :deploy do
   desc "Run rake task to get bikeways opendata"
   task :getopendata do
-    run "cd '#{current_path}' && #{rake} bikeways:getopendata RAILS_ENV=#{rails_env}"
+    run "cd '#{current_path}' && bundle exec rake bikeways:getopendata RAILS_ENV=#{rails_env}"
   end
 
   before :deploy, "deploy:check_revision"
