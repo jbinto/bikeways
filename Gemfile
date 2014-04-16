@@ -37,11 +37,6 @@ group :development, :test do
   gem 'thin'
   gem 'pry-rails'
 
-  # for reading shapefiles
-  gem 'rubyzip', '>= 1.0.0'
-  gem 'rgeo-shapefile'
-  gem 'dbf'
-
   gem 'annotate', '>=2.6.0'
 
   gem 'capistrano',  '~> 3.1'
@@ -73,3 +68,8 @@ gem 'gistyle'
 
 # for making HTTP requests less dense
 gem 'httparty'
+
+# for reading shapefiles
+gem 'rubyzip', '>= 1.0.0'
+gem 'rgeo-shapefile'
+gem 'dbf'
