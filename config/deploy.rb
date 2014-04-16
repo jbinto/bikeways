@@ -36,8 +36,11 @@ namespace :deploy do
   desc "Run rake task to get bikeways opendata"
   task :getopendata do
     on roles(:app) do
-      execute "cd '#{release_path}'"
-      execute "bundle exec rake bikeways:getopendata RAILS_ENV=#{fetch(:rails_env)}"
+      within release_path do
+        with rails_env: fetch(:rails_env) do
+          execute :rake, "bikeways:getopendata"
+        end
+      end
     end
   end
 
