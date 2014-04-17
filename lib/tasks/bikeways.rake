@@ -1,46 +1,25 @@
-require 'httparty'
-require 'zip'
+require 'open_data_import'
 
-require 'action_view'
-include ActionView::Helpers::NumberHelper   # for number_to_human_size
-
-require 'fileutils'
-
-
-BIKEWAYS_URL = 'http://opendata.toronto.ca/gcc/bikeways_wgs84.zip'
-OPENDATA_DIR = Rails.root.join('vendor/opendata')
-BIKEWAYS_FILE = File.join(OPENDATA_DIR, 'bikeways_wgs84.zip')
-
-namespace :bikeways do
+namespace :opendata do
   desc "Downloads the Bikeways ESRI shape file from the Toronto open data catalogue (MTM3)"
-
-  task getopendata: :environment do
-    if File.exists?(BIKEWAYS_FILE)
-      puts "#{BIKEWAYS_FILE} already exists, please delete to redownload"
-      next    # n.b. can't `return` from a rake task, ruby explodes
-    end
-
-    # download
-    FileUtils.mkdir_p OPENDATA_DIR
-    print "downloading #{BIKEWAYS_URL} ... "
-    File.open(BIKEWAYS_FILE, 'wb') do |f|
-      len = f.write HTTParty.get(BIKEWAYS_URL).parsed_response
-      puts "#{number_to_human_size(len)} received"
-    end
-
-    # unzip
-    Zip::File.open(BIKEWAYS_FILE) do |zip|
-      zip.each do |file|
-        dest = File.join('vendor/opendata', file.to_s)
-        if File.exists? dest
-          puts "already exists, skipping: #{file}"
-          next
-        end
-
-        puts "extracting: #{file}"
-        file.extract File.join('vendor/opendata', file.to_s)
-      end
-    end
+  task init: :environment do
+    OpenDataImport.new.reset
   end
 
+  desc "Downloads the Bikeways data even if it already exists"
+  task reset: :environment do
+    OpenDataImport.new(force: true).reset
+  end
+
+  task download: :environment do
+    OpenDataImport.new.download
+  end
+
+  task unzip: :environment do
+    OpenDataImport.new.unzip
+  end
+
+  task import: :environment do
+    OpenDataImport.new.import
+  end
 end
