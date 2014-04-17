@@ -31,11 +31,18 @@ namespace :bikeways do
   end
 end
 
-namespace :logs do
-  desc 'tail Rails log'
-  task :rails do
+namespace :rails do
+  desc 'Tail Rails log'
+  task :log do
     on roles(:app) do
       execute "tail -f #{shared_path}/log/#{fetch(:rails_env)}.log"
+    end
+  end
+
+  desc "Restart the rails app by touching tmp/restart.txt"
+  task :restart do
+    on roles(:app), in: :sequence, wait: 5 do
+      execute :touch, release_path.join("tmp/restart.txt")
     end
   end
 end
@@ -58,9 +65,4 @@ namespace :deploy do
   after 'deploy:symlink:shared', 'deploy:compile_assets_locally'
   after :finishing, 'deploy:cleanup'
 
-  task :restart do
-    on roles(:app), in: :sequence, wait: 5 do
-      execute :touch, release_path.join("tmp/restart.txt")
-    end
-  end
 end
