@@ -31,6 +31,14 @@ namespace :bikeways do
   end
 end
 
+namespace :logs do
+  desc 'tail Rails log'
+  task :rails do
+    on roles(:app) do
+      execute "tail -f #{shared_path}/log/#{fetch(:rails_env)}.log"
+    end
+  end
+end
 
 namespace :deploy do
   desc "Run rake task to get bikeways opendata"
