@@ -18,7 +18,7 @@ class CreateBikewaySegments < ActiveRecord::Migration
       t.integer :to_intersection_id
       t.string :street_classification
       t.string :bikeway_type
-      t.geometry :geom, :srid => 2019
+      t.geometry :geom, :srid => 4326
 
       t.timestamps
     end
