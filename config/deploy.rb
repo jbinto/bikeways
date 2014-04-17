@@ -42,10 +42,14 @@ end
 
 namespace :db do
   desc 'Drop DB'
-  task :drop { rake "db:drop" }
+  task :drop do
+    rake "environment db:drop"
+  end
 
   desc 'Create DB'
-  task :create { rake "db:create" }
+  task :create do
+    rake "db:create"
+  end
 
   desc "Restart the rails app by touching tmp/restart.txt"
   task :restart do
@@ -57,10 +61,14 @@ end
 
 namespace :opendata do
   desc "Run rake task to get bikeways opendata"
-  task :init { rake "opendata:init"}
+  task :init do
+    rake "opendata:init"
+  end
 
   desc "Run rake task to get bikeways opendata (even if it exists already, will overwrite)"
-  task :reset { rake "opendata:reset" }
+  task :reset do
+    rake "opendata:reset"
+  end
 end
 
 namespace :deploy do
