@@ -51,12 +51,12 @@ class BikewaySegmentsDatatable
     segments = BikewaySegment.order("#{sort_column} #{sort_direction}")
     segments = segments.page(page).per_page(per_page)
     if params[:sSearch].present?
-      segments = segments.where('' \
-        'full_street_name like :search' \
-        'or bikeway_type like :search' \
-        'or street_classification like :search' \
-        'or city_linear_feature_name_id = :search'
-      )
+      where = '' \
+        'full_street_name ilike :search' \
+        ' or bikeway_type ilike :search' \
+        ' or street_classification ilike :search' \
+        ' or cast(city_linear_feature_name_id as text) ilike :search'
+      segments = segments.where(where, search: "%#{params[:sSearch]}%")
     end
     segments
   end
