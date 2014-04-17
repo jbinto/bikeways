@@ -40,13 +40,6 @@ ActiveRecord::Schema.define(version: 20140412005454) do
     t.spatial  "geom",                        limit: {:srid=>2019, :type=>"geometry"}
   end
 
-  create_table "locations", force: true do |t|
-    t.string   "name"
-    t.spatial  "latlon",     limit: {:srid=>4326, :type=>"point", :geographic=>true}
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
