@@ -7,9 +7,9 @@ include ActionView::Helpers::NumberHelper   # for number_to_human_size
 require 'fileutils'
 
 
-BIKEWAYS_URL = 'http://opendata.toronto.ca/gcc/bikeways_mtm3.zip'
+BIKEWAYS_URL = 'http://opendata.toronto.ca/gcc/bikeways_wgs84.zip'
 OPENDATA_DIR = Rails.root.join('vendor/opendata')
-BIKEWAYS_FILE = File.join(OPENDATA_DIR, 'bikeways-mtm3.zip')
+BIKEWAYS_FILE = File.join(OPENDATA_DIR, 'bikeways_wgs84.zip')
 
 namespace :bikeways do
   desc "Downloads the Bikeways ESRI shape file from the Toronto open data catalogue (MTM3)"
