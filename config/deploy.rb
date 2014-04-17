@@ -40,48 +40,47 @@ namespace :rails do
   end
 end
 
-namespace :opendata do
-  desc "Run rake task to get bikeways opendata"
-  task :init do
-    on roles(:app) do
-      within release_path do
-        with rails_env: fetch(:rails_env) do
-          execute :rake, "opendata:init"
-        end
-      end
-    end
-  end
+namespace :db do
+  desc 'Drop DB'
+  task :drop { rake "db:drop" }
 
-  task :reset do
-    on roles(:app) do
-      within release_path do
-        with rails_env: fetch(:rails_env) do
-          execute :rake, "opendata:reset"
-        end
-      end
+  desc 'Create DB'
+  task :create { rake "db:create" }
+
+  desc "Restart the rails app by touching tmp/restart.txt"
+  task :restart do
+    on roles(:app), in: :sequence, wait: 5 do
+      execute :touch, release_path.join("tmp/restart.txt")
     end
   end
 end
 
-namespace :deploy do
-
+namespace :opendata do
   desc "Run rake task to get bikeways opendata"
-  task :getopendata do
-    on roles(:app) do
-      within release_path do
-        with rails_env: fetch(:rails_env) do
-          execute :rake, "bikeways:getopendata"
-        end
-      end
-    end
-  end
+  task :init { rake "opendata:init"}
+
+  desc "Run rake task to get bikeways opendata (even if it exists already, will overwrite)"
+  task :reset { rake "opendata:reset" }
+end
+
+namespace :deploy do
 
   # See http://capistranorb.com/documentation/getting-started/flow/
   # for event flow lifecycle
   before :deploy, "deploy:check_revision"
   before :deploy, "deploy:run_tests"
-  before 'deploy:migrate', 'deploy:getopendata'
+  after 'deploy:migrate', 'opendata:init'
   after 'deploy:symlink:shared', 'deploy:compile_assets_locally'
   after :finishing, 'deploy:cleanup'
 
+end
+
+def rake(args)
+  on roles(:app) do
+    within release_path do
+      with rails_env: fetch(:rails_env) do
+        execute :rake, args
+      end
+    end
+  end
 end
