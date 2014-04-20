@@ -46,6 +46,6 @@ FactoryGirl.define do
     to_intersection_id 20000
     street_classification "Arterial"
     bikeway_type "Bike Lane"
-    geom "MULTILINESTRING ((303000.000 4827000.000, 302000.00 4827000.00))"
+    geom "MULTILINESTRING ((-79.521209665 43.590895067, -79.522533939 43.590800049))"
   end
 end
