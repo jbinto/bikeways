@@ -1,4 +1,5 @@
 require 'open_data_import'
+require 'open_data_stats'
 
 namespace :opendata do
   desc "Downloads the Bikeways ESRI shape file from the Toronto open data catalogue (MTM3)"
@@ -22,4 +23,12 @@ namespace :opendata do
   task import: :environment do
     OpenDataImport.new.import
   end
+
+  namespace :stats do
+    desc "uses SegmentWalker to walk all of the routes, output to console"
+    task walk_all_routes: :environment do
+      OpenDataStats.new.walk_all_routes
+    end
+  end
 end
+
