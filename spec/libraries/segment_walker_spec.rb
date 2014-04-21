@@ -24,7 +24,7 @@ describe SegmentWalker do
   end
 
   def test_ordered_segments(segment_id)
-    walker = SegmentWalker.new(segment_id: third.id)
+    walker = SegmentWalker.new(segment_id: segment_id)
     actual = walker.ordered_segments
     expected = [first, second, third, fourth, fifth]
     expect(actual).to eq(expected)
