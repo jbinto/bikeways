@@ -23,4 +23,23 @@ class BikewaySegmentsController < ApplicationController
       }
     end
   end
+
+  def next
+    segment = BikewaySegment.find params[:id]
+    redirect_to_segment segment.next
+  end
+
+  def prev
+    segment = BikewaySegment.find params[:id]
+    redirect_to_segment segment.prev
+  end
+
+  def redirect_to_segment(segment)
+    if segment.blank?
+      redirect_to :back, alert: "That's as far as you can go."
+    else
+      redirect_to segment
+    end
+  end
+
 end

@@ -7,9 +7,9 @@
 }
 
 .google-map-canvas {
-  width: 800px;
+  display: block;
   #map {
-    height: 400px;
+    height: 500px;
   }
 
   // This fixes broken Google Maps: http://i.imgur.com/eP9r8QM.png
@@ -19,5 +19,4 @@
   }
 }
 
-
-
+.wide { width: 100%; }
