@@ -1,7 +1,9 @@
 class SegmentWalker
   def initialize(opts)
     @segment = nil
-    if opts.key?(:segment_id)
+    if opts.key?(:segment)
+      @segment = opts[:segment]
+    elsif opts.key?(:segment_id)
       @segment = BikewaySegment.find(opts[:segment_id])
     end
   end

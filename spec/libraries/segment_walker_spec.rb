@@ -23,6 +23,10 @@ describe SegmentWalker do
     test_ordered_segments(SegmentWalker.new(segment_id: fifth.id))
   end
 
+  it "can accept a segment object directly" do
+    test_ordered_segments(SegmentWalker.new(segment: fifth))
+  end
+
   def test_ordered_segments(walker)
     actual = walker.ordered_segments
     expected = [first, second, third, fourth, fifth]
