@@ -56,15 +56,25 @@ describe BikewaySegment do
     expect(actual).to eq(expected)
   end
 
-  it "should be able to find it's next neighbor" do
-    first = FactoryGirl.create(:bikeway_segment, :city_linear_feature_name_id => 1, :from_intersection_id => 1, :to_intersection_id => 2)
-    second = FactoryGirl.create(:bikeway_segment, :city_linear_feature_name_id => 1, :from_intersection_id => 2, :to_intersection_id => 1000)
-    different_street = FactoryGirl.create(:bikeway_segment, :city_linear_feature_name_id => 50, :from_intersection_id => 1000, :to_intersection_id => 1001)
+  describe 'neighbour functions'
 
-    actual = first.next
-    expected = second
+    # A little fuzzy on let vs let! 
+    let!(:first) { FactoryGirl.create(:bikeway_segment, :city_linear_feature_name_id => 1, :from_intersection_id => 1, :to_intersection_id => 2) }
+    let!(:second) { FactoryGirl.create(:bikeway_segment, :city_linear_feature_name_id => 1, :from_intersection_id => 2, :to_intersection_id => 1000) }
+    let!(:different_street) { FactoryGirl.create(:bikeway_segment, :city_linear_feature_name_id => 50, :from_intersection_id => 1000, :to_intersection_id => 1001) }
 
-    expect(actual).to eq(expected)
-  end
+    it "should be able to find it's next neighbour" do
+      actual = first.next
+      expected = second
+
+      expect(actual).to eq(expected)
+    end
+
+    it "should be able to find it's previous neighbour" do
+      actual = second.prev
+      expected = first
+
+      expect(actual).to eq(expected)
+    end
 
 end

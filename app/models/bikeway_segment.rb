@@ -34,4 +34,9 @@ class BikewaySegment < ActiveRecord::Base
   def next
     BikewaySegment.where(from_intersection_id: self.to_intersection_id).first
   end
+
+  def prev
+    BikewaySegment.where(to_intersection_id: self.from_intersection_id).first
+  end
+
 end
