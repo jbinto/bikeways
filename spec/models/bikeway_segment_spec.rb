@@ -77,4 +77,10 @@ describe BikewaySegment do
       expect(actual).to eq(expected)
     end
 
+    it "should return nil when it's next neighbor is another feature" do
+      actual = second.next
+
+      expect(actual).to be_nil
+    end
+
 end

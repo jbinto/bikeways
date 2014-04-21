@@ -32,7 +32,10 @@ class BikewaySegment < ActiveRecord::Base
   end
 
   def next
-    BikewaySegment.where(from_intersection_id: self.to_intersection_id).first
+    BikewaySegment.where(
+      from_intersection_id: self.to_intersection_id,
+      city_linear_feature_name_id: self.city_linear_feature_name_id
+    ).first
   end
 
   def prev
