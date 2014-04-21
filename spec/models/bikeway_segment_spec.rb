@@ -58,10 +58,12 @@ describe BikewaySegment do
 
   describe 'neighbour functions'
 
-    # A little fuzzy on let vs let! 
+    # A little fuzzy on let vs let!
+    let!(:different_before_first) { FactoryGirl.create(:bikeway_segment, :city_linear_feature_name_id => 300, :from_intersection_id => 500, :to_intersection_id => 1) }
     let!(:first) { FactoryGirl.create(:bikeway_segment, :city_linear_feature_name_id => 1, :from_intersection_id => 1, :to_intersection_id => 2) }
     let!(:second) { FactoryGirl.create(:bikeway_segment, :city_linear_feature_name_id => 1, :from_intersection_id => 2, :to_intersection_id => 1000) }
-    let!(:different_street) { FactoryGirl.create(:bikeway_segment, :city_linear_feature_name_id => 50, :from_intersection_id => 1000, :to_intersection_id => 1001) }
+    let!(:different_after_second) { FactoryGirl.create(:bikeway_segment, :city_linear_feature_name_id => 50, :from_intersection_id => 1000, :to_intersection_id => 1001) }
+
 
     it "should be able to find it's next neighbour" do
       actual = first.next
@@ -79,7 +81,11 @@ describe BikewaySegment do
 
     it "should return nil when it's next neighbor is another feature" do
       actual = second.next
+      expect(actual).to be_nil
+    end
 
+    it "should return nil when it's previous neighbor is another feature" do
+      actual = first.prev
       expect(actual).to be_nil
     end
 
