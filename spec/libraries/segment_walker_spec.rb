@@ -18,8 +18,6 @@ describe SegmentWalker do
     actual = walker.ordered_segments
     expected = [first, second, third, fourth, fifth]
 
-    binding.pry
-
     expect(actual).to eq(expected)
   end
 end

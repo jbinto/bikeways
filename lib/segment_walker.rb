@@ -17,7 +17,6 @@ class SegmentWalker
     until @segment.nil?
       @segment = @segment.next
       segments.push(@segment) unless @segment.nil?
-      puts "test"
     end
 
     # go back to the pivot, then walk backwards
@@ -25,7 +24,6 @@ class SegmentWalker
     until @segment.nil?
       @segment = @segment.prev
       segments.unshift(@segment) unless @segment.nil?
-      puts "test2"
     end
 
     segments
