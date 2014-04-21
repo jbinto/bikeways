@@ -27,7 +27,10 @@ APP.bikeway_segments =
       kmlUrl = $('#map').data('kml-url')
       handler = Gmaps.build('Google')
       opts =
-        provider: {}
+        # see https://developers.google.com/maps/documentation/javascript/reference?hl=fr#MapOptions
+        provider: {
+          zoom: 16
+        }
         internal: { id: 'map' }
       handler.buildMap(opts, ->
         kmls = handler.addKml(
