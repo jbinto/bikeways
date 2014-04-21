@@ -9,21 +9,24 @@ class SegmentWalker
   def ordered_segments
     segments = []
 
+    # don't clobber the instance variable...
+    segment = @segment
+
     # current segment is the "middle" or the pivot
-    pivot = @segment
+    pivot = segment
     segments.push(pivot)
 
     # first walk forwards...
-    until @segment.nil?
-      @segment = @segment.next
-      segments.push(@segment) unless @segment.nil?
+    until segment.nil?
+      segment = segment.next
+      segments.push(segment) unless segment.nil?
     end
 
     # go back to the pivot, then walk backwards
-    @segment = pivot
-    until @segment.nil?
-      @segment = @segment.prev
-      segments.unshift(@segment) unless @segment.nil?
+    segment = pivot
+    until segment.nil?
+      segment = segment.prev
+      segments.unshift(segment) unless segment.nil?
     end
 
     segments
