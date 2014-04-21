@@ -5,28 +5,27 @@ require 'segment_walker'
 class OpenDataStats
   def walk_all_routes
     for id in all_feature_ids
-      puts "scanning feature lfn=#{id}..."
+      #print "feature lfn=#{id};"
 
       # not in sequence, directly from database
       segments = segments_by_feature_id(id)
 
-      puts "  found #{segments.count} segments in the database"
-
       # take the first segment, could be anywhere within this feature
       arbitrary_segment = segments.first
-      puts "  full_street_name: #{arbitrary_segment.full_street_name}"
-      puts "  arbitrarily selecting segment id=#{arbitrary_segment.id} to pass to SegmentWalker"
+      print "#{arbitrary_segment.full_street_name} (lfn_id=#{id}); "
+      print "id=#{arbitrary_segment.id}; "
+      print "geoid=#{arbitrary_segment.city_geo_id}; "
+      print "#{segments.count} segments in db; "
 
       walker = SegmentWalker.new(segment: arbitrary_segment)
       walked_segments = walker.ordered_segments
 
-      puts "  found #{walked_segments.count} segments by walking the route"
-
+      print "#{walked_segments.count} segments found by walking; "
 
       if segments.count == walked_segments.count
-        puts " counts match, good"
+        puts "counts match, good"
       else
-        puts " counts DIFFER! BAD! ********* <----------"
+        puts "BAD! counts DO NOT MATCH!"
       end
     end
   end
