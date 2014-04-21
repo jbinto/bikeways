@@ -6,13 +6,14 @@ include ActionView::Helpers::NumberHelper   # for number_to_human_size
 
 require 'fileutils'
 
-
-OPENDATA_URL = 'http://opendata.toronto.ca/gcc/bikeways_wgs84.zip'
-OPENDATA_DIR = Rails.root.join('vendor/opendata')
-OPENDATA_ZIP_FILE = File.join(OPENDATA_DIR, 'bikeways_wgs84.zip')
-OPENDATA_SHAPEFILE = Rails.root.join('vendor', 'opendata', 'CENTRELINE_BIKEWAY_OD_WGS84')
+## TODO: Unit test this class using fakefs gem (& figure out how to mock out Zip somehow)
 
 class OpenDataImport
+  OPENDATA_URL = 'http://opendata.toronto.ca/gcc/bikeways_wgs84.zip'
+  OPENDATA_DIR = Rails.root.join('vendor/opendata')
+  OPENDATA_ZIP_FILE = File.join(OPENDATA_DIR, 'bikeways_wgs84.zip')
+  OPENDATA_SHAPEFILE = Rails.root.join('vendor', 'opendata', 'CENTRELINE_BIKEWAY_OD_WGS84')
+
   def initialize(opts = {})
     @opendata_url = opts[:opendata_url] ||= OPENDATA_URL
     @opendata_dir = opts[:opendata_dir] ||= OPENDATA_DIR
