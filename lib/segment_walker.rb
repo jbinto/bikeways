@@ -9,28 +9,45 @@ class SegmentWalker
   end
 
   def ordered_segments
-    segments = []
+    @segments = []
+    @cycle = false
 
     # don't clobber the instance variable...
     segment = @segment
 
     # current segment is the "middle" or the pivot
     pivot = segment
-    segments.push(pivot)
+    @segments.push(pivot)
 
     # first walk forwards...
     until segment.nil?
       segment = segment.next
-      segments.push(segment) unless segment.nil?
+      break unless process_segment(segment) do |segment|
+        @segments.push(segment)
+      end
     end
 
     # go back to the pivot, then walk backwards
     segment = pivot
     until segment.nil?
       segment = segment.prev
-      segments.unshift(segment) unless segment.nil?
+      break unless process_segment(segment) do |segment|
+        @segments.unshift(segment)
+      end
     end
 
-    segments
+    @segments
+  end
+
+  def process_segment(segment, &block)
+    if segment.nil?
+      return false
+    elsif @segments.include?(segment)
+      # cycle detected! segment already seen! breaking out!"
+      @cycle = true
+      return false
+    else
+      yield segment
+    end
   end
 end
