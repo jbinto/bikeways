@@ -32,6 +32,8 @@ class BikewaySegment < ActiveRecord::Base
   end
 
   def next
+    # NOTE: strong assumption that this will return exactly 1 or 0 records
+    # undefined behaviour if it returns >1 record, should detect this
     BikewaySegment.where(
       from_intersection_id: self.to_intersection_id,
       city_linear_feature_name_id: self.city_linear_feature_name_id
@@ -44,5 +46,8 @@ class BikewaySegment < ActiveRecord::Base
       city_linear_feature_name_id: self.city_linear_feature_name_id
     ).first
   end
+
+  # TODO: next_feature
+  # or: separate next into "this_feature_only: true/fale"
 
 end
