@@ -5,33 +5,37 @@ require 'segment_walker'
 class OpenDataStats
   def walk_all_routes
     for id in all_feature_ids
-      # not in sequence, directly from database
-      segments = segments_by_feature_id(id)
+      walk_route(id)
+    end
+  end
 
-      # take the first segment, could be anywhere within this feature
-      arbitrary_segment = segments.first
-      print "#{arbitrary_segment.full_street_name} (lfn_id=#{id}); "
-      print "id=#{arbitrary_segment.id}; "
-      print "geoid=#{arbitrary_segment.city_geo_id}; "
-      print "#{segments.count} segments in db; "
+  def walk_route(id)
+    # not in sequence, directly from database
+    segments = segments_by_feature_id(id)
 
-      walker = SegmentWalker.new(segment: arbitrary_segment)
-      walked_segments = walker.ordered_segments
+    # take the first segment, could be anywhere within this feature
+    arbitrary_segment = segments.first
+    print "#{arbitrary_segment.full_street_name} (lfn_id=#{id}); "
+    print "id=#{arbitrary_segment.id}; "
+    print "geoid=#{arbitrary_segment.city_geo_id}; "
+    print "#{segments.count} segments in db; "
 
-      print "#{walked_segments.count} segments found by walking; "
+    walker = SegmentWalker.new(segment: arbitrary_segment)
+    walked_segments = walker.ordered_segments
 
-      if segments.count == walked_segments.count
-        puts "counts match, good"
-      else
-        puts "BAD! counts DO NOT MATCH!"
+    print "#{walked_segments.count} segments found by walking; "
 
-        # which ones did we walk? we need to compare to the ones 
-        walked_ids = walked_segments.map { |x| x.id }
-        segment_ids = segments.map {|x| x.id }
-        difference = segment_ids - walked_ids
+    if segments.count == walked_segments.count
+      puts "counts match, good"
+    else
+      puts "BAD! counts DO NOT MATCH!"
 
-        puts "  offenders: #{difference}"
-      end
+      # which ones did we walk? we need to compare to the ones 
+      walked_ids = walked_segments.map { |x| x.id }
+      segment_ids = segments.map {|x| x.id }
+      difference = segment_ids - walked_ids
+
+      puts "  offenders: #{difference}"
     end
   end
 
