@@ -66,6 +66,10 @@ class OpenDataImport
     BikewaySegment.transaction do
       BikewaySegment.delete_all
 
+      # http://stackoverflow.com/a/2097175/19779
+      # Reset the PK so that the IDs are at least consistent between environments / subsequent imports.
+      ActiveRecord::Base.connection.reset_pk_sequence!('bikeway_segments')
+
       factory = RGeo::Geographic.spherical_factory(:srid => 4326)
       RGeo::Shapefile::Reader.open('vendor/opendata/CENTRELINE_BIKEWAY_OD_WGS84', :factory => factory) do |file|
         index = 0
