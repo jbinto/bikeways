@@ -1,12 +1,15 @@
 Avonlea Blvd (lfn_id=14); id=1339; geoid=1349; 2 segments in db; 2 segments found by walking; counts match, good
 Bayview Ave (lfn_id=24); id=1987; geoid=1903; 16 segments in db; 12 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [2519, 2520, 2561, 2629]
 Beechwood Dr (lfn_id=29); id=2122; geoid=1099; 5 segments in db; 5 segments found by walking; counts match, good
 Bessborough Dr (lfn_id=33); id=1689; geoid=1068; 1 segments in db; 1 segments found by walking; counts match, good
 Broadview Ave (lfn_id=44); id=1846; geoid=1794; 21 segments in db; 17 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [1955, 2032, 2040, 3381]
 Broadway Ave (lfn_id=45); id=402; geoid=445528; 26 segments in db; 26 segments found by walking; counts match, good
 Browning Ave (lfn_id=46); id=1732; geoid=1139871; 2 segments in db; 2 segments found by walking; counts match, good
 Bryant Ave (lfn_id=47); id=3755; geoid=1341; 1 segments in db; 1 segments found by walking; counts match, good
 Carlaw Ave (lfn_id=56); id=1416; geoid=14023426; 34 segments in db; 26 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [1685, 1762, 1763, 1779, 1875, 2908, 2909, 4318]
 Cedarvale Ave (lfn_id=58); id=1119; geoid=20081425; 2 segments in db; 2 segments found by walking; counts match, good
 Chisholm Ave (lfn_id=64); id=4163; geoid=10334906; 1 segments in db; 1 segments found by walking; counts match, good
 Cosburn Ave (lfn_id=70); id=1499; geoid=1013; 40 segments in db; 40 segments found by walking; counts match, good
@@ -27,33 +30,44 @@ Hopedale Ave (lfn_id=200); id=964; geoid=20041730; 4 segments in db; 4 segments 
 Leacrest Rd (lfn_id=219); id=1983; geoid=10179885; 3 segments in db; 3 segments found by walking; counts match, good
 Leaside Bdge (lfn_id=222); id=1938; geoid=1048; 6 segments in db; 6 segments found by walking; counts match, good
 Leslie St (lfn_id=225); id=1603; geoid=1145041; 6 segments in db; 3 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [2625, 3005, 3416]
 Logan Ave (lfn_id=228); id=1518; geoid=14025214; 55 segments in db; 43 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [1706, 1707, 1883, 1949, 1970, 1971, 2020, 2021, 2109, 4224, 4294, 5159]
 Lumsden Ave (lfn_id=231); id=1328; geoid=1278; 11 segments in db; 5 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [1418, 3109, 3110, 3241, 4973, 5012]
 Main St (lfn_id=234); id=1329; geoid=14016243; 17 segments in db; 17 segments found by walking; counts match, good
 Mallory Cres (lfn_id=236); id=1954; geoid=10180646; 1 segments in db; 1 segments found by walking; counts match, good
 McKayfield Rd (lfn_id=243); id=1672; geoid=1508; 1 segments in db; 1 segments found by walking; counts match, good
 Memorial Park Ave (lfn_id=248); id=1671; geoid=1515; 1 segments in db; 1 segments found by walking; counts match, good
 Millwood Rd (lfn_id=252); id=1681; geoid=825; 11 segments in db; 11 segments found by walking; counts match, good
 Monarch Park Ave (lfn_id=256); id=1670; geoid=1635; 13 segments in db; 1 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [1697, 1788, 1866, 1896, 1911, 2050, 2056, 2059, 2060, 2082, 2083, 4298]
 Moore Ave (lfn_id=257); id=534; geoid=14177821; 16 segments in db; 16 segments found by walking; counts match, good
 Mortimer Ave (lfn_id=259); id=2055; geoid=1634; 1 segments in db; 1 segments found by walking; counts match, good
 Nesbitt Dr (lfn_id=263); id=4257; geoid=14233291; 3 segments in db; 3 segments found by walking; counts match, good
 O'Connor Dr (lfn_id=274); id=1993; geoid=1434; 3 segments in db; 3 segments found by walking; counts match, good
 Pape Ave (lfn_id=280); id=1690; geoid=1899; 1 segments in db; 1 segments found by walking; counts match, good
 Pottery Rd (lfn_id=293); id=1848; geoid=1798; 6 segments in db; 5 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [1879]
 Rosevear Ave (lfn_id=314); id=4161; geoid=1312; 1 segments in db; 1 segments found by walking; counts match, good
 Sammon Ave (lfn_id=321); id=1691; geoid=14253149; 28 segments in db; 1 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [1782, 1785, 1786, 1787, 1884, 1885, 1895, 1969, 1986, 2057, 2058, 2105, 2113, 2114, 2116, 2145, 2146, 2147, 2163, 2554, 3379, 3634, 4273, 4293, 4316, 4629, 5024]
 Secord Ave (lfn_id=324); id=1342; geoid=8128550; 3 segments in db; 3 segments found by walking; counts match, good
 Southvale Dr (lfn_id=333); id=2124; geoid=898; 2 segments in db; 2 segments found by walking; counts match, good
 St Clair Ave E (lfn_id=339); id=813; geoid=1139282; 8 segments in db; 4 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [1455, 2805, 2930, 4253]
 Strathmore Blvd (lfn_id=346); id=1741; geoid=7846386; 10 segments in db; 10 segments found by walking; counts match, good
 Sutherland Dr (lfn_id=349); id=1663; geoid=206; 21 segments in db; 21 segments found by walking; counts match, good
 Victoria Park Ave (lfn_id=370); id=1698; geoid=1185; 6 segments in db; 2 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [2239, 2303, 2894, 3046]
 Westlake Ave (lfn_id=378); id=1378; geoid=1139467; 2 segments in db; 1 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [4173]
 Woodmount Ave (lfn_id=396); id=1843; geoid=14023382; 17 segments in db; 17 segments found by walking; counts match, good
 Bathurst St (lfn_id=436); id=2654; geoid=440022; 5 segments in db; 3 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [2705, 2735]
 Beechborough Ave (lfn_id=438); id=444; geoid=4504104; 5 segments in db; 5 segments found by walking; counts match, good
 Bloor St W (lfn_id=458); id=288; geoid=10630355; 19 segments in db; 12 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [899, 900, 914, 1038, 2881, 4055, 4057]
 Caledonia Rd (lfn_id=481); id=715; geoid=7590; 1 segments in db; 1 segments found by walking; counts match, good
 Castlefield Ave (lfn_id=488); id=660; geoid=7622; 9 segments in db; 9 segments found by walking; counts match, good
 Castleton Ave (lfn_id=489); id=347; geoid=9544561; 4 segments in db; 4 segments found by walking; counts match, good
@@ -62,8 +76,10 @@ Church St (lfn_id=503); id=776; geoid=14021163; 4 segments in db; 4 segments fou
 Claxton Blvd (lfn_id=507); id=736; geoid=8564418; 3 segments in db; 3 segments found by walking; counts match, good
 Clearview Hts (lfn_id=509); id=356; geoid=7923; 2 segments in db; 2 segments found by walking; counts match, good
 Connaught Crcl (lfn_id=522); id=720; geoid=2302185; 5 segments in db; 3 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [4044, 4047]
 Denison Rd E (lfn_id=549); id=361; geoid=14050712; 5 segments in db; 5 segments found by walking; counts match, good
 Dufferin St (lfn_id=557); id=545; geoid=9246268; 12 segments in db; 4 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [670, 1113, 1114, 4030, 4635, 6106, 6108, 6115]
 Dundas St W (lfn_id=558); id=552; geoid=10759093; 4 segments in db; 4 segments found by walking; counts match, good
 Durie St (lfn_id=562); id=4174; geoid=1145989; 1 segments in db; 1 segments found by walking; counts match, good
 Eglinton Ave W (lfn_id=571); id=744; geoid=7442; 1 segments in db; 1 segments found by walking; counts match, good
@@ -86,6 +102,7 @@ Ridelle Ave (lfn_id=840); id=706; geoid=2903451; 2 segments in db; 2 segments fo
 Rockcliffe Blvd (lfn_id=847); id=370; geoid=9206; 3 segments in db; 3 segments found by walking; counts match, good
 Rogers Rd (lfn_id=849); id=363; geoid=14072024; 36 segments in db; 36 segments found by walking; counts match, good
 Roselawn Ave (lfn_id=854); id=439; geoid=1138313; 24 segments in db; 13 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [565, 806, 809, 867, 891, 892, 957, 1046, 4050, 5731, 5732]
 Rosemount Ave (lfn_id=855); id=157; geoid=13969767; 3 segments in db; 3 segments found by walking; counts match, good
 Runnymede Rd (lfn_id=866); id=186; geoid=14043061; 29 segments in db; 29 segments found by walking; counts match, good
 St Phillips Rd (lfn_id=895); id=154; geoid=908336; 5 segments in db; 5 segments found by walking; counts match, good
@@ -93,6 +110,7 @@ Tichester Rd (lfn_id=913); id=3391; geoid=30006085; 2 segments in db; 2 segments
 Trethewey Dr (lfn_id=917); id=235; geoid=446642; 19 segments in db; 19 segments found by walking; counts match, good
 Vaughan Rd (lfn_id=930); id=668; geoid=11129896; 19 segments in db; 19 segments found by walking; counts match, good
 Weston Rd (lfn_id=952); id=131; geoid=7228; 11 segments in db; 5 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [359, 3957, 3960, 3961, 5918, 5923]
 Wilby Cres (lfn_id=956); id=358; geoid=7600; 1 segments in db; 1 segments found by walking; counts match, good
 Winona Dr (lfn_id=964); id=629; geoid=8543; 18 segments in db; 18 segments found by walking; counts match, good
 Albert Ave (lfn_id=1011); id=1295; geoid=913726; 1 segments in db; 1 segments found by walking; counts match, good
@@ -107,6 +125,7 @@ Bemersyde Dr (lfn_id=1146); id=378; geoid=3070104; 9 segments in db; 9 segments 
 Berry Rd (lfn_id=1159); id=1184; geoid=7985493; 4 segments in db; 4 segments found by walking; counts match, good
 Birmingham St (lfn_id=1181); id=13; geoid=914482; 29 segments in db; 29 segments found by walking; counts match, good
 Botfield Ave (lfn_id=1196); id=145; geoid=911502; 3 segments in db; 1 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [166, 3813]
 Brown's Line (lfn_id=1243); id=3727; geoid=914741; 1 segments in db; 1 segments found by walking; counts match, good
 Burlington St (lfn_id=1259); id=1296; geoid=7973805; 1 segments in db; 1 segments found by walking; counts match, good
 Burnhamthorpe Rd (lfn_id=1266); id=522; geoid=9531390; 1 segments in db; 1 segments found by walking; counts match, good
@@ -115,6 +134,7 @@ Chartwell Rd (lfn_id=1336); id=3827; geoid=912905; 1 segments in db; 1 segments 
 Dalegrove Cres (lfn_id=1423); id=425; geoid=10561345; 1 segments in db; 1 segments found by walking; counts match, good
 Decarie Crcl (lfn_id=1446); id=473; geoid=909915; 2 segments in db; 2 segments found by walking; counts match, good
 Delma Dr (lfn_id=1452); id=6; geoid=7640829; 5 segments in db; 4 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [23]
 Echo Valley Rd (lfn_id=1511); id=570; geoid=911221; 1 segments in db; 1 segments found by walking; counts match, good
 Edenbridge Dr (lfn_id=1517); id=409; geoid=909937; 16 segments in db; 16 segments found by walking; counts match, good
 Elder Ave (lfn_id=1532); id=35; geoid=914590; 4 segments in db; 4 segments found by walking; counts match, good
@@ -144,8 +164,11 @@ Katrine Rd (lfn_id=1890); id=4527; geoid=2938817; 1 segments in db; 1 segments f
 Kingsgrove Blvd (lfn_id=1923); id=246; geoid=910936; 1 segments in db; 1 segments found by walking; counts match, good
 Kipling Ave (lfn_id=1935); id=3839; geoid=913257; 1 segments in db; 1 segments found by walking; counts match, good
 Lake Shore Blvd W (lfn_id=1962); id=4; geoid=7664563; 33 segments in db; 8 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [1155, 1160, 1161, 1162, 1196, 1207, 1211, 1212, 1230, 1245, 1250, 1304, 1344, 1668, 1686, 1692, 1693, 1694, 2794, 4076, 4099, 4200, 5468, 5469, 5507]
 Lake Shore Dr (lfn_id=1963); id=10; geoid=7806873; 11 segments in db; 3 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [1327, 1602, 1615, 1651, 1665, 4014, 4223, 4238]
 Lambeth Rd (lfn_id=1966); id=250; geoid=910496; 2 segments in db; 1 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [3706]
 Lloyd Manor Rd (lfn_id=2008); id=390; geoid=909815; 5 segments in db; 5 segments found by walking; counts match, good
 Longfield Rd (lfn_id=2019); id=274; geoid=909723; 6 segments in db; 6 segments found by walking; counts match, good
 Lynmont Rd (lfn_id=2033); id=2808; geoid=907358; 5 segments in db; 5 segments found by walking; counts match, good
@@ -164,17 +187,21 @@ Princess Margaret Blvd (lfn_id=2301); id=365; geoid=909887; 16 segments in db; 1
 Rathburn Rd (lfn_id=2335); id=130; geoid=2942552; 49 segments in db; 49 segments found by walking; counts match, good
 Renforth Dr (lfn_id=2353); id=140; geoid=911415; 45 segments in db; 45 segments found by walking; counts match, good
 Riverwood Pkwy (lfn_id=2391); id=1164; geoid=912066; 3 segments in db; 2 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [4139]
 Rowntree Rd (lfn_id=2408); id=3679; geoid=30010491; 2 segments in db; 2 segments found by walking; counts match, good
 Royal York Rd (lfn_id=2413); id=102; geoid=10144789; 121 segments in db; 119 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [360, 3944]
 Second St (lfn_id=2447); id=3626; geoid=30008388; 2 segments in db; 2 segments found by walking; counts match, good
 Shaver Ave N (lfn_id=2465); id=104; geoid=9530651; 4 segments in db; 4 segments found by walking; counts match, good
 Shaver Ave S (lfn_id=2466); id=120; geoid=912614; 5 segments in db; 5 segments found by walking; counts match, good
 Sherway Dr (lfn_id=2475); id=99; geoid=5507892; 3 segments in db; 3 segments found by walking; counts match, good
 Silverstone Dr (lfn_id=2485); id=2715; geoid=10145252; 30 segments in db; 30 segments found by walking; counts match, good
 Stanley Ave (lfn_id=2520); id=1213; geoid=7569815; 8 segments in db; 7 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [4041]
 Stephen Dr (lfn_id=2528); id=1206; geoid=7985538; 12 segments in db; 12 segments found by walking; counts match, good
 Swan Ave (lfn_id=2565); id=105; geoid=6765648; 3 segments in db; 3 segments found by walking; counts match, good
 The Kingsway (lfn_id=2601); id=216; geoid=10079853; 27 segments in db; 11 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [276, 277, 286, 287, 314, 315, 316, 364, 395, 406, 417, 418, 443, 2534, 3928, 5033]
 The Queensway (lfn_id=2603); id=1078; geoid=1147171; 19 segments in db; 19 segments found by walking; counts match, good
 The West Mall (lfn_id=2604); id=110; geoid=913986; 7 segments in db; 7 segments found by walking; counts match, good
 Thirtieth St (lfn_id=2612); id=19; geoid=14301804; 8 segments in db; 8 segments found by walking; counts match, good
@@ -200,14 +227,17 @@ Avoca Ave (lfn_id=2927); id=814; geoid=1139337; 3 segments in db; 3 segments fou
 Baird Ave (lfn_id=2935); id=1831; geoid=14022452; 6 segments in db; 6 segments found by walking; counts match, good
 Balmoral Ave (lfn_id=2941); id=885; geoid=7992508; 3 segments in db; 3 segments found by walking; counts match, good
 Barton Ave (lfn_id=2954); id=159; geoid=20038421; 22 segments in db; 20 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [871, 994]
 Bay St (lfn_id=2962); id=812; geoid=7975169; 41 segments in db; 41 segments found by walking; counts match, good
 Beaty Ave (lfn_id=2970); id=1053; geoid=14036311; 2 segments in db; 2 segments found by walking; counts match, good
 Bedford Rd (lfn_id=2975); id=760; geoid=7974702; 6 segments in db; 6 segments found by walking; counts match, good
 Berkshire Ave (lfn_id=2996); id=1827; geoid=14037210; 2 segments in db; 2 segments found by walking; counts match, good
 Beverley St (lfn_id=3002); id=1121; geoid=2842441; 13 segments in db; 13 segments found by walking; counts match, good
 Bloor St E (lfn_id=3020); id=848; geoid=1141946; 12 segments in db; 2 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [1425, 1436, 1482, 1557, 1558, 1579, 1592, 1593, 1597, 1740]
 Boulton Dr (lfn_id=3040); id=733; geoid=1140828; 3 segments in db; 3 segments found by walking; counts match, good
 Briar Hill Ave (lfn_id=3058); id=932; geoid=1138124; 2 segments in db; 1 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [3858]
 Brock Ave (lfn_id=3066); id=560; geoid=14017926; 23 segments in db; 23 segments found by walking; counts match, good
 Brookmount Rd (lfn_id=3072); id=1336; geoid=14021662; 2 segments in db; 2 segments found by walking; counts match, good
 Brookside Dr (lfn_id=3073); id=1744; geoid=1140610; 1 segments in db; 1 segments found by walking; counts match, good
@@ -220,6 +250,7 @@ Chester Hill Rd (lfn_id=3157); id=1941; geoid=14035940; 2 segments in db; 2 segm
 Christie St (lfn_id=3165); id=811; geoid=14003876; 17 segments in db; 17 segments found by walking; counts match, good
 Churchill Ave (lfn_id=3167); id=2470; geoid=438700; 8 segments in db; 8 segments found by walking; counts match, good
 Cibola Ave (lfn_id=3168); id=6056; geoid=1147675; 18 segments in db; 13 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [6154, 6258, 6329, 6330, 6366]
 Clarendon Ave (lfn_id=3174); id=889; geoid=1139903; 3 segments in db; 3 segments found by walking; counts match, good
 Colborne Lodge Dr (lfn_id=3197); id=1062; geoid=1147046; 27 segments in db; 27 segments found by walking; counts match, good
 Commissioners St (lfn_id=3207); id=1381; geoid=11093309; 9 segments in db; 9 segments found by walking; counts match, good
@@ -228,7 +259,9 @@ Copeland Ave (lfn_id=3218); id=1533; geoid=14021881; 2 segments in db; 2 segment
 Corley Ave (lfn_id=3220); id=1973; geoid=1140724; 3 segments in db; 3 segments found by walking; counts match, good
 Craven Rd (lfn_id=3235); id=3028; geoid=14049686; 2 segments in db; 2 segments found by walking; counts match, good
 Crawford St (lfn_id=3236); id=168; geoid=20031082; 17 segments in db; 15 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [5948, 5949]
 Davenport Rd (lfn_id=3269); id=393; geoid=14012953; 78 segments in db; 62 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [786, 802, 842, 860, 862, 928, 933, 934, 935, 2669, 3890, 4082, 4220, 5557, 5558, 5560]
 Deforest Rd (lfn_id=3274); id=1502; geoid=1145876; 3 segments in db; 3 segments found by walking; counts match, good
 Dewson St (lfn_id=3294); id=997; geoid=1144460; 6 segments in db; 6 segments found by walking; counts match, good
 Dixon Ave (lfn_id=3300); id=1507; geoid=1141959; 2 segments in db; 2 segments found by walking; counts match, good
@@ -246,11 +279,14 @@ Elm Ave (lfn_id=3384); id=1440; geoid=5527811; 4 segments in db; 4 segments foun
 Elm Grove Ave (lfn_id=3386); id=1001; geoid=1147072; 3 segments in db; 3 segments found by walking; counts match, good
 Elm Ridge Crcl (lfn_id=3387); id=701; geoid=1138510; 5 segments in db; 5 segments found by walking; counts match, good
 Elm Ridge Dr (lfn_id=3388); id=476; geoid=10224322; 12 segments in db; 8 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [573, 574, 575, 5697]
 Fairford Ave (lfn_id=3420); id=1916; geoid=1141119; 3 segments in db; 3 segments found by walking; counts match, good
 Fairlawn Ave (lfn_id=3421); id=1251; geoid=443988; 12 segments in db; 12 segments found by walking; counts match, good
 Felstead Ave (lfn_id=3430); id=1752; geoid=1140314; 6 segments in db; 5 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [2845]
 Fermanagh Ave (lfn_id=3433); id=1317; geoid=14017557; 3 segments in db; 3 segments found by walking; counts match, good
 Gerrard St E (lfn_id=3495); id=985; geoid=7641994; 36 segments in db; 34 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [1910, 1919]
 Gerrard St W (lfn_id=3496); id=976; geoid=7730035; 3 segments in db; 3 segments found by walking; counts match, good
 Glen Rd (lfn_id=3511); id=2031; geoid=1140969; 11 segments in db; 11 segments found by walking; counts match, good
 Glen Ames (lfn_id=3512); id=1678; geoid=1140825; 2 segments in db; 2 segments found by walking; counts match, good
@@ -260,6 +296,7 @@ Gwynne Ave (lfn_id=3589); id=1098; geoid=14036210; 4 segments in db; 4 segments 
 Hallam St (lfn_id=3594); id=643; geoid=14011308; 12 segments in db; 12 segments found by walking; counts match, good
 Hanson St (lfn_id=3604); id=1569; geoid=2565769; 9 segments in db; 9 segments found by walking; counts match, good
 Harbord St (lfn_id=3605); id=656; geoid=14020561; 40 segments in db; 17 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [912, 959, 996, 1007, 1008, 1009, 1049, 1050, 1057, 1058, 1085, 1106, 1122, 1123, 4002, 4087, 4975, 5004, 5018, 5020, 5056, 5962, 5964]
 Havelock St (lfn_id=3622); id=4105; geoid=9344421; 1 segments in db; 1 segments found by walking; counts match, good
 Hiawatha Rd (lfn_id=3656); id=1915; geoid=1141167; 1 segments in db; 1 segments found by walking; counts match, good
 High Park Ave (lfn_id=3660); id=214; geoid=7994458; 3 segments in db; 3 segments found by walking; counts match, good
@@ -270,6 +307,7 @@ Howard Park Ave (lfn_id=3700); id=3595; geoid=30010904; 1 segments in db; 1 segm
 Howland Ave (lfn_id=3704); id=872; geoid=8431740; 1 segments in db; 1 segments found by walking; counts match, good
 Huron St (lfn_id=3716); id=831; geoid=7974487; 1 segments in db; 1 segments found by walking; counts match, good
 Inglewood Dr (lfn_id=3727); id=783; geoid=1139315; 8 segments in db; 5 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [1039, 2768, 3707]
 Jedburgh Rd (lfn_id=3743); id=2566; geoid=1137813; 13 segments in db; 13 segments found by walking; counts match, good
 Joicey Blvd (lfn_id=3751); id=2540; geoid=443068; 6 segments in db; 6 segments found by walking; counts match, good
 Jones Ave (lfn_id=3752); id=1459; geoid=14025066; 28 segments in db; 28 segments found by walking; counts match, good
@@ -277,12 +315,16 @@ Kennedy Ave (lfn_id=3764); id=1271; geoid=7586008; 2 segments in db; 2 segments 
 Kilbarry Rd (lfn_id=3774); id=581; geoid=1138986; 9 segments in db; 9 segments found by walking; counts match, good
 King St W (lfn_id=3780); id=1167; geoid=8166309; 1 segments in db; 1 segments found by walking; counts match, good
 Kingston Rd (lfn_id=3786); id=1254; geoid=8246622; 21 segments in db; 8 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [1736, 1902, 2245, 2263, 2299, 2318, 2333, 2361, 2404, 4203, 4366, 4521, 5578]
 Lakeshore Ave (lfn_id=3802); id=6084; geoid=1147782; 31 segments in db; 29 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [6251, 6303]
 Lansdowne Ave (lfn_id=3814); id=524; geoid=14012788; 19 segments in db; 19 segments found by walking; counts match, good
 Lappin Ave (lfn_id=3815); id=595; geoid=8408376; 4 segments in db; 4 segments found by walking; counts match, good
 Lascelles Blvd (lfn_id=3821); id=447; geoid=8206135; 8 segments in db; 6 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [654, 767]
 Lawlor Ave (lfn_id=3826); id=1415; geoid=14016341; 2 segments in db; 2 segments found by walking; counts match, good
 Lawrence Ave E (lfn_id=3828); id=1809; geoid=443065; 24 segments in db; 2 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [2034, 2185, 2234, 2246, 2249, 2281, 2285, 2353, 2364, 2369, 2873, 2897, 2934, 3010, 3691, 3861, 4270, 4614, 5046, 5250, 5741, 5749]
 Lee Ave (lfn_id=3835); id=1423; geoid=10411355; 8 segments in db; 8 segments found by walking; counts match, good
 Lindsey Ave (lfn_id=3856); id=561; geoid=14019053; 4 segments in db; 4 segments found by walking; counts match, good
 Lonsdale Rd (lfn_id=3870); id=793; geoid=7273443; 1 segments in db; 1 segments found by walking; counts match, good
@@ -294,6 +336,7 @@ Macpherson Ave (lfn_id=3895); id=3939; geoid=1140924; 1 segments in db; 1 segmen
 Maitland Pl (lfn_id=3898); id=1563; geoid=14019711; 2 segments in db; 2 segments found by walking; counts match, good
 Marwood Rd (lfn_id=3935); id=513; geoid=1138429; 1 segments in db; 1 segments found by walking; counts match, good
 Mayfield Ave (lfn_id=3948); id=1505; geoid=1145917; 4 segments in db; 3 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [5124]
 Merrill Bridge Rd (lfn_id=3985); id=1462; geoid=1139853; 1 segments in db; 1 segments found by walking; counts match, good
 Mona Dr (lfn_id=4004); id=740; geoid=1138062; 1 segments in db; 1 segments found by walking; counts match, good
 Montgomery Ave (lfn_id=4012); id=471; geoid=14023983; 3 segments in db; 3 segments found by walking; counts match, good
@@ -303,7 +346,9 @@ Norway Ave (lfn_id=4075); id=1403; geoid=7667174; 3 segments in db; 3 segments f
 Oakcrest Ave (lfn_id=4086); id=1337; geoid=1139569; 7 segments in db; 7 segments found by walking; counts match, good
 Oakvale Ave (lfn_id=4091); id=1862; geoid=7795111; 1 segments in db; 1 segments found by walking; counts match, good
 Old Forest Hill Rd (lfn_id=4098); id=456; geoid=10279892; 16 segments in db; 12 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [727, 731, 762, 3972]
 Old Park Rd (lfn_id=4101); id=546; geoid=1138716; 8 segments in db; 7 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [705]
 Orchard View Blvd (lfn_id=4111); id=512; geoid=8237180; 1 segments in db; 1 segments found by walking; counts match, good
 Osler St (lfn_id=4124); id=392; geoid=14013273; 5 segments in db; 5 segments found by walking; counts match, good
 Ossington Ave (lfn_id=4125); id=982; geoid=14018398; 3 segments in db; 3 segments found by walking; counts match, good
@@ -322,13 +367,16 @@ Rees St (lfn_id=4262); id=960; geoid=1146948; 1 segments in db; 1 segments found
 Rhodes Ave (lfn_id=4272); id=3001; geoid=14022263; 2 segments in db; 2 segments found by walking; counts match, good
 Ridley Blvd (lfn_id=4284); id=2662; geoid=1137619; 3 segments in db; 3 segments found by walking; counts match, good
 River St (lfn_id=4289); id=1494; geoid=14024527; 17 segments in db; 16 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [4143]
 Ronan Ave (lfn_id=4309); id=2537; geoid=1137707; 6 segments in db; 6 segments found by walking; counts match, good
 Roncesvalles Ave (lfn_id=4310); id=1396; geoid=1146273; 1 segments in db; 1 segments found by walking; counts match, good
 Roseheath Ave (lfn_id=4319); id=4187; geoid=3905081; 1 segments in db; 1 segments found by walking; counts match, good
 Rosehill Ave (lfn_id=4320); id=739; geoid=14021215; 4 segments in db; 4 segments found by walking; counts match, good
 Rosewell Ave (lfn_id=4323); id=748; geoid=1138012; 9 segments in db; 2 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [759, 781, 931, 3936, 3948, 3949, 3950]
 Rushbrooke Ave (lfn_id=4338); id=1790; geoid=14024467; 2 segments in db; 2 segments found by walking; counts match, good
 Russell Hill Rd (lfn_id=4345); id=620; geoid=2311902; 19 segments in db; 18 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [621]
 Sackville St (lfn_id=4353); id=1568; geoid=1142784; 12 segments in db; 12 segments found by walking; counts match, good
 Scarborough Rd (lfn_id=4366); id=1944; geoid=10476855; 1 segments in db; 1 segments found by walking; counts match, good
 Shaw St (lfn_id=4388); id=632; geoid=1142831; 41 segments in db; 41 segments found by walking; counts match, good
@@ -341,14 +389,17 @@ Sorauren Ave (lfn_id=4419); id=551; geoid=9446137; 17 segments in db; 17 segment
 South Kingsway (lfn_id=4422); id=1248; geoid=14015864; 3 segments in db; 3 segments found by walking; counts match, good
 Southwood Dr (lfn_id=4425); id=1356; geoid=1140543; 4 segments in db; 4 segments found by walking; counts match, good
 Spadina Ave (lfn_id=4426); id=939; geoid=20006289; 22 segments in db; 16 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [1087, 1152, 1176, 1231, 4053, 4068]
 Springhurst Ave (lfn_id=4434); id=977; geoid=1147371; 16 segments in db; 16 segments found by walking; counts match, good
 Spruce St (lfn_id=4437); id=1812; geoid=14020206; 7 segments in db; 7 segments found by walking; counts match, good
 Stephenson Ave (lfn_id=4485); id=1426; geoid=14066675; 2 segments in db; 2 segments found by walking; counts match, good
 Strachan Ave (lfn_id=4492); id=1043; geoid=1147284; 16 segments in db; 16 segments found by walking; counts match, good
 Strathcona Ave (lfn_id=4496); id=1028; geoid=20078985; 7 segments in db; 7 segments found by walking; counts match, good
 Sumach St (lfn_id=4507); id=1441; geoid=14020952; 17 segments in db; 6 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [1617, 1618, 1619, 1628, 1981, 2005, 2006, 2079, 2098, 2100, 4326]
 Summerhill Ave (lfn_id=4508); id=1952; geoid=1139481; 2 segments in db; 2 segments found by walking; counts match, good
 Swanwick Ave (lfn_id=4519); id=1346; geoid=14016111; 18 segments in db; 6 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [1372, 1373, 1374, 1375, 1376, 1421, 1442, 1443, 1452, 1920, 1943, 4196]
 Sylvan Ave (lfn_id=4522); id=2256; geoid=110959; 9 segments in db; 9 segments found by walking; counts match, good
 Symington Ave (lfn_id=4524); id=421; geoid=8312972; 6 segments in db; 6 segments found by walking; counts match, good
 The Esplanade (lfn_id=4541); id=1275; geoid=1145548; 3 segments in db; 3 segments found by walking; counts match, good
@@ -365,6 +416,7 @@ Westminster Ave (lfn_id=4665); id=1224; geoid=14017509; 4 segments in db; 4 segm
 Wilson Ave (lfn_id=4693); id=128; geoid=445502; 13 segments in db; 13 segments found by walking; counts match, good
 Withrow St (lfn_id=4705); id=6086; geoid=1147499; 1 segments in db; 1 segments found by walking; counts match, good
 Yonge St (lfn_id=4733); id=808; geoid=8741282; 13 segments in db; 1 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [1186, 1187, 1188, 1195, 1234, 1235, 1268, 1269, 1644, 2529, 4072, 5733]
 Addington Ave (lfn_id=4753); id=4440; geoid=439898; 1 segments in db; 1 segments found by walking; counts match, good
 Almore Ave (lfn_id=4782); id=1143; geoid=20041396; 9 segments in db; 9 segments found by walking; counts match, good
 Armour Blvd (lfn_id=4827); id=2702; geoid=441855; 7 segments in db; 7 segments found by walking; counts match, good
@@ -399,6 +451,7 @@ Fairglen Cres (lfn_id=5543); id=299; geoid=20040493; 2 segments in db; 2 segment
 Falstaff Ave (lfn_id=5554); id=345; geoid=8855171; 1 segments in db; 1 segments found by walking; counts match, good
 Faywood Blvd (lfn_id=5570); id=1299; geoid=20045915; 18 segments in db; 18 segments found by walking; counts match, good
 Finch Ave E (lfn_id=5589); id=184; geoid=20230437; 8 segments in db; 7 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [5467]
 Flint Rd (lfn_id=5612); id=2710; geoid=2453499; 2 segments in db; 2 segments found by walking; counts match, good
 Footbridge Rd (lfn_id=5619); id=6271; geoid=441641; 1 segments in db; 1 segments found by walking; counts match, good
 Forest Grove Dr (lfn_id=5622); id=4423; geoid=437960; 2 segments in db; 2 segments found by walking; counts match, good
@@ -421,6 +474,7 @@ Maple Leaf Dr (lfn_id=6149); id=297; geoid=9530678; 14 segments in db; 14 segmen
 Mayall Ave (lfn_id=6186); id=2698; geoid=444504; 4 segments in db; 4 segments found by walking; counts match, good
 McKee Ave (lfn_id=6194); id=2434; geoid=438272; 5 segments in db; 5 segments found by walking; counts match, good
 McNicoll Ave (lfn_id=6195); id=2409; geoid=20195195; 46 segments in db; 33 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [2438, 2439, 2447, 2451, 2452, 2464, 2495, 2599, 4392, 4413, 4417, 5216, 6465]
 Moccasin Trl (lfn_id=6237); id=3091; geoid=30004325; 3 segments in db; 3 segments found by walking; counts match, good
 Prince Charles Dr (lfn_id=6469); id=2637; geoid=444355; 1 segments in db; 1 segments found by walking; counts match, good
 Ridgevale Dr (lfn_id=6547); id=2501; geoid=10340481; 5 segments in db; 5 segments found by walking; counts match, good
@@ -436,8 +490,10 @@ Shaughnessy Blvd (lfn_id=6691); id=1842; geoid=437456; 17 segments in db; 17 seg
 Sheppard Ave E (lfn_id=6698); id=221; geoid=20080167; 27 segments in db; 27 segments found by walking; counts match, good
 Shermount Ave (lfn_id=6704); id=499; geoid=446195; 3 segments in db; 3 segments found by walking; counts match, good
 Shoreham Dr (lfn_id=6708); id=6147; geoid=30006901; 2 segments in db; 1 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [6152]
 Sloane Ave (lfn_id=6732); id=1882; geoid=442911; 8 segments in db; 8 segments found by walking; counts match, good
 Steeles Ave E (lfn_id=6792); id=2371; geoid=14228285; 11 segments in db; 2 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [2427, 2492, 2493, 2558, 2559, 2624, 3702, 5220, 5221]
 Stella St (lfn_id=6794); id=371; geoid=445962; 2 segments in db; 2 segments found by walking; counts match, good
 Stilecroft Dr (lfn_id=6797); id=4966; geoid=30007060; 2 segments in db; 2 segments found by walking; counts match, good
 Supertest Rd (lfn_id=6830); id=2630; geoid=8594855; 2 segments in db; 2 segments found by walking; counts match, good
@@ -482,6 +538,7 @@ Conlins Rd (lfn_id=7642); id=2293; geoid=106682; 16 segments in db; 16 segments 
 Copperfield Rd (lfn_id=7645); id=434; geoid=20143859; 6 segments in db; 6 segments found by walking; counts match, good
 Corinthian Blvd (lfn_id=7651); id=2433; geoid=106292; 3 segments in db; 3 segments found by walking; counts match, good
 Coronation Dr (lfn_id=7654); id=2268; geoid=108835; 12 segments in db; 11 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [2448]
 Dolphin Dr (lfn_id=7759); id=1252; geoid=112750; 3 segments in db; 3 segments found by walking; counts match, good
 Donside Dr (lfn_id=7763); id=1263; geoid=112724; 2 segments in db; 2 segments found by walking; counts match, good
 Eastpark Blvd (lfn_id=7815); id=2776; geoid=30001371; 1 segments in db; 1 segments found by walking; counts match, good
@@ -506,6 +563,7 @@ Hunt Club Dr (lfn_id=8146); id=1464; geoid=113205; 1 segments in db; 1 segments 
 Huntingwood Dr (lfn_id=8150); id=2195; geoid=106722; 36 segments in db; 36 segments found by walking; counts match, good
 Kildonan Dr (lfn_id=8241); id=1369; geoid=2283157; 1 segments in db; 1 segments found by walking; counts match, good
 Kingsbury Cres (lfn_id=8257); id=1371; geoid=113075; 3 segments in db; 2 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [6028]
 L'Amoreaux Dr (lfn_id=8278); id=2414; geoid=6261346; 6 segments in db; 6 segments found by walking; counts match, good
 Lakehurst Cres (lfn_id=8284); id=1837; geoid=112875; 1 segments in db; 1 segments found by walking; counts match, good
 Lakehurst Dr (lfn_id=8285); id=1927; geoid=112866; 1 segments in db; 1 segments found by walking; counts match, good
@@ -517,6 +575,7 @@ Maybourne Ave (lfn_id=8446); id=1309; geoid=112746; 1 segments in db; 1 segments
 Meadowvale Rd (lfn_id=8470); id=2461; geoid=102880; 4 segments in db; 4 segments found by walking; counts match, good
 Midland Ave (lfn_id=8496); id=1475; geoid=112591; 2 segments in db; 2 segments found by walking; counts match, good
 Military Trl (lfn_id=8501); id=2237; geoid=106790; 5 segments in db; 4 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [5256]
 Milner Ave (lfn_id=8507); id=6116; geoid=4920122; 2 segments in db; 2 segments found by walking; counts match, good
 Neilson Ave (lfn_id=8573); id=2296; geoid=111929; 1 segments in db; 1 segments found by walking; counts match, good
 Old Kingston Rd (lfn_id=8613); id=2773; geoid=30001939; 4 segments in db; 4 segments found by walking; counts match, good
@@ -545,22 +604,26 @@ Undercliff Dr (lfn_id=9142); id=1446; geoid=112512; 4 segments in db; 4 segments
 Valhalla Blvd (lfn_id=9151); id=1349; geoid=113114; 1 segments in db; 1 segments found by walking; counts match, good
 Venture Dr (lfn_id=9161); id=2321; geoid=104220; 2 segments in db; 2 segments found by walking; counts match, good
 Viewbank Rd (lfn_id=9169); id=1350; geoid=113127; 5 segments in db; 3 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [1370, 1391]
 Warden Ave (lfn_id=9187); id=635; geoid=14666154; 2 segments in db; 2 segments found by walking; counts match, good
 Waterfield Dr (lfn_id=9194); id=2205; geoid=108728; 4 segments in db; 4 segments found by walking; counts match, good
 Westlake Rd (lfn_id=9208); id=2330; geoid=109647; 7 segments in db; 7 segments found by walking; counts match, good
 Winston Churchill Dr (lfn_id=9247); id=4232; geoid=113175; 1 segments in db; 1 segments found by walking; counts match, good
 Wood Glen Rd (lfn_id=9260); id=1509; geoid=113201; 3 segments in db; 2 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [2674]
 Ontario Dr (lfn_id=9366); id=2992; geoid=20229232; 1 segments in db; 1 segments found by walking; counts match, good
 Princes Blvd (lfn_id=9372); id=1014; geoid=14063901; 7 segments in db; 7 segments found by walking; counts match, good
 Remembrance Dr (lfn_id=9374); id=3501; geoid=30006295; 4 segments in db; 4 segments found by walking; counts match, good
 Saskatchewan Rd (lfn_id=9381); id=5066; geoid=30016265; 1 segments in db; 1 segments found by walking; counts match, good
 Planning Boundary (lfn_id=9580); id=527; geoid=20035487; 5 segments in db; 1 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [1077, 2099, 2813, 5985]
 Church St (lfn_id=9733); id=143; geoid=11226815; 12 segments in db; 12 segments found by walking; counts match, good
 College St (lfn_id=9765); id=453; geoid=7795744; 59 segments in db; 59 segments found by walking; counts match, good
 Elizabeth St (lfn_id=9766); id=1082; geoid=7792568; 1 segments in db; 1 segments found by walking; counts match, good
 Portland St (lfn_id=9780); id=866; geoid=14035971; 12 segments in db; 12 segments found by walking; counts match, good
 Simpson Ave (lfn_id=9784); id=4124; geoid=14023451; 2 segments in db; 2 segments found by walking; counts match, good
 St George St (lfn_id=9786); id=827; geoid=1141307; 13 segments in db; 12 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [4045]
 Duplex Ave (lfn_id=9800); id=6117; geoid=14661968; 6 segments in db; 6 segments found by walking; counts match, good
 Grace St (lfn_id=9808); id=1088; geoid=20033451; 2 segments in db; 2 segments found by walking; counts match, good
 Knox Ave (lfn_id=9814); id=1491; geoid=14024355; 5 segments in db; 5 segments found by walking; counts match, good
@@ -569,6 +632,7 @@ Morningside Ave (lfn_id=9817); id=1201; geoid=1146356; 1 segments in db; 1 segme
 Muir Ave (lfn_id=9818); id=544; geoid=14019006; 5 segments in db; 5 segments found by walking; counts match, good
 Sylvan Ave (lfn_id=9825); id=1103; geoid=8393008; 2 segments in db; 2 segments found by walking; counts match, good
 Old Finch Ave (lfn_id=10252); id=480; geoid=14669137; 20 segments in db; 12 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [2460, 2480, 3061, 3195, 4402, 5222, 5223, 5224]
 Prince Edward Dr N (lfn_id=10300); id=339; geoid=7027905; 4 segments in db; 4 segments found by walking; counts match, good
 Grand Marshall Dr (lfn_id=10466); id=5752; geoid=6444784; 1 segments in db; 1 segments found by walking; counts match, good
 Brimley Rd S (lfn_id=10496); id=1721; geoid=30029505; 1 segments in db; 1 segments found by walking; counts match, good
@@ -576,14 +640,18 @@ Lakeshore W Browns Li Ramp (lfn_id=10683); id=3759; geoid=914767; 2 segments in 
 Browns Li Lakeshore W Ramp (lfn_id=10684); id=4618; geoid=14659688; 1 segments in db; 1 segments found by walking; counts match, good
 Island Rd (lfn_id=10685); id=6109; geoid=30008709; 1 segments in db; 1 segments found by walking; counts match, good
 Tommy Thompson Pk (lfn_id=10900); id=1061; geoid=1145729; 17 segments in db; 5 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [1260, 1330, 1717, 1718, 1719, 3338, 3457, 3458, 3725, 4100, 4108, 4822]
 Water Tower Gt (lfn_id=11051); id=2453; geoid=2144994; 1 segments in db; 1 segments found by walking; counts match, good
 Lake Promenade (lfn_id=11152); id=1; geoid=7315520; 17 segments in db; 11 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [61, 74, 75, 78, 5008, 5009]
 The Pond Rd (lfn_id=11174); id=6100; geoid=5716516; 5 segments in db; 5 segments found by walking; counts match, good
 Prince Edward Dr S (lfn_id=11327); id=1189; geoid=20052811; 8 segments in db; 8 segments found by walking; counts match, good
 Spring Rd (lfn_id=11360); id=2971; geoid=7730163; 5 segments in db; 3 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [2972, 6510]
 Centre Rd (lfn_id=11361); id=4904; geoid=30040335; 4 segments in db; 4 segments found by walking; counts match, good
 West Rd (lfn_id=11362); id=6161; geoid=30042193; 7 segments in db; 7 segments found by walking; counts match, good
 Avenue Of The Islands (lfn_id=11373); id=6113; geoid=8128885; 9 segments in db; 7 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [6243, 6365]
 Trinity Dr (lfn_id=11382); id=5912; geoid=30036902; 2 segments in db; 2 segments found by walking; counts match, good
 Marwood Crt (lfn_id=11395); id=514; geoid=10706390; 1 segments in db; 1 segments found by walking; counts match, good
 Rouge River Dr (lfn_id=11498); id=3856; geoid=14661375; 7 segments in db; 7 segments found by walking; counts match, good
@@ -592,126 +660,188 @@ Joseph Duggan Rd (lfn_id=11632); id=2161; geoid=14628532; 6 segments in db; 6 se
 Lower Simcoe St (lfn_id=11642); id=1023; geoid=14134903; 13 segments in db; 13 segments found by walking; counts match, good
 Sherway Gt (lfn_id=11687); id=55; geoid=13990836; 1 segments in db; 1 segments found by walking; counts match, good
 Silver Dart Dr (lfn_id=13958); id=292; geoid=12824038; 2 segments in db; 1 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [3652]
 Ln E Yonge S Merton (lfn_id=14021); id=1273; geoid=14673339; 1 segments in db; 1 segments found by walking; counts match, good
 Scarborough Heights Blvd (lfn_id=15686); id=4362; geoid=111773; 1 segments in db; 1 segments found by walking; counts match, good
 Ridgecrest Dr (lfn_id=15708); id=2206; geoid=106759; 1 segments in db; 1 segments found by walking; counts match, good
 Fort York Blvd (lfn_id=15826); id=63; geoid=20112858; 17 segments in db; 9 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [2301, 3718, 3855, 5611, 5723, 5907, 6101, 6194]
 Barkdene Hills (lfn_id=16266); id=1311; geoid=111984; 6 segments in db; 6 segments found by walking; counts match, good
 Sherway Gardens Rd (lfn_id=17447); id=6112; geoid=30015564; 1 segments in db; 1 segments found by walking; counts match, good
 Bald Eagle Ave (lfn_id=18100); id=6107; geoid=14661282; 1 segments in db; 1 segments found by walking; counts match, good
 Upper Rouge Trl (lfn_id=18115); id=6121; geoid=30019823; 1 segments in db; 1 segments found by walking; counts match, good
 Ln S Camborne S Exbury (lfn_id=18473); id=4321; geoid=20042593; 1 segments in db; 1 segments found by walking; counts match, good
 Ww N Lawrence E Varna (lfn_id=18545); id=789; geoid=20049944; 2 segments in db; 1 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [4304]
 Ww E Bamburgh S Belinda (lfn_id=18681); id=2401; geoid=20051829; 1 segments in db; 1 segments found by walking; counts match, good
 Ww N Triangle Villas W Wintermute (lfn_id=18740); id=3073; geoid=30000731; 2 segments in db; 2 segments found by walking; counts match, good
 Ww N Fundy Bay W Hood (lfn_id=18741); id=1173; geoid=20052047; 1 segments in db; 1 segments found by walking; counts match, good
 Ln S Warren S Lundy (lfn_id=19046); id=6148; geoid=30005551; 1 segments in db; 1 segments found by walking; counts match, good
 Ww W Elmfield S Canongate (lfn_id=19077); id=6170; geoid=20233984; 2 segments in db; 2 segments found by walking; counts match, good
 Esther Shiner Blvd (lfn_id=19097); id=2707; geoid=14675362; 4 segments in db; 1 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [2990, 6110, 6111]
 Milliken Park Trl (lfn_id=19148); id=2912; geoid=30000422; 25 segments in db; 12 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [4761, 5229, 5243, 5248, 5297, 5370, 5449, 5635, 5637, 5638, 5700, 5718, 5719]
 Humber Creek Trl (lfn_id=19149); id=3053; geoid=30008676; 16 segments in db; 3 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [3433, 3434, 3471, 3472, 3486, 3519, 3545, 3607, 4800, 4877, 4902, 4923, 4930]
 Colony Park Trl (lfn_id=19150); id=3341; geoid=30000577; 1 segments in db; 1 segments found by walking; counts match, good
 Smithfield Park Trl (lfn_id=19151); id=5781; geoid=30035832; 2 segments in db; 2 segments found by walking; counts match, good
 Mimico Creek Trl (lfn_id=19152); id=2927; geoid=30010591; 55 segments in db; 2 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [2932, 3003, 3057, 3059, 3074, 3162, 3265, 3267, 3277, 3293, 3358, 3368, 3369, 3386, 3480, 3543, 3544, 3604, 3646, 3647, 3648, 3651, 3661, 3665, 3666, 3677, 3744, 4565, 4566, 4602, 4605, 4701, 4719, 4807, 4823, 4843, 4849, 4879, 4909, 4914, 5122, 5581, 5640, 5647, 5648, 5649, 5676, 5691, 5692, 5701, 5708, 5730, 5734]
 Prince of Wales Park Trl (lfn_id=19153); id=5540; geoid=30024892; 1 segments in db; 1 segments found by walking; counts match, good
 Colonel Sam Smith Park Trl (lfn_id=19154); id=2850; geoid=30008447; 36 segments in db; 16 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [2851, 3029, 3417, 3488, 3490, 3517, 3581, 3605, 3606, 4541, 4865, 4901, 4943, 5087, 5088, 5089, 6374, 6376, 6438, 6445]
 Waterfront Trl (lfn_id=19155); id=3026; geoid=30010841; 31 segments in db; 1 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [3248, 3256, 3374, 3388, 3602, 3770, 4819, 4826, 4864, 5329, 5330, 5372, 5394, 5395, 5415, 5416, 5417, 5702, 5753, 5865, 5866, 5869, 5916, 5917, 6250, 6492, 6524, 6528, 6529, 6558]
 Eglinton Ave West Trl (lfn_id=19157); id=3153; geoid=30007031; 33 segments in db; 3 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [3178, 3403, 3404, 3418, 3455, 3449, 3450, 3451, 3452, 3453, 3454, 3466, 3485, 3491, 3515, 3523, 3586, 3613, 4734, 4871, 4972, 5277, 5367, 5461, 5527, 5528, 5548, 5549, 5572, 5573]
 Elmcrest Creek Trl (lfn_id=19158); id=3008; geoid=30009385; 43 segments in db; 3 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [3161, 3163, 3238, 3266, 3292, 3295, 3346, 3349, 3350, 3408, 3405, 3406, 3407, 3409, 3428, 3456, 3630, 3633, 3836, 4317, 4549, 4699, 4788, 4789, 4824, 4831, 4892, 4928, 5017, 5792, 5854, 5979, 6416, 6482, 6483, 6491, 6547, 6549, 6551, 6552]
 Etobicoke Creek Trl (lfn_id=19159); id=3259; geoid=30008959; 14 segments in db; 9 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [3469, 3470, 4903, 4948, 5779]
 Humber Bay Park East Trl (lfn_id=19160); id=2847; geoid=30042594; 35 segments in db; 15 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [3015, 3262, 3270, 3289, 3445, 3553, 3554, 3555, 3556, 3650, 4581, 4793, 4934, 4935, 6338, 6340, 6378, 6453, 6454, 6459]
 East Highland Creek Trl (lfn_id=19162); id=2835; geoid=30002318; 57 segments in db; 4 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [2846, 2876, 2900, 3000, 3031, 3039, 3134, 3141, 4579, 4623, 4637, 4649, 4650, 4752, 4776, 4778, 5295, 5374, 5375, 5376, 5377, 5378, 5381, 5382, 5383, 5393, 5399, 5418, 5419, 5430, 5431, 5432, 5433, 5434, 5435, 5438, 5439, 5440, 5450, 5514, 5515, 5520, 5526, 6291, 6292, 6293, 6294, 6295, 6394, 6395, 6396, 6397, 6523]
 Black Creek Trl (lfn_id=19163); id=2904; geoid=30007194; 66 segments in db; 13 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [3017, 3018, 3068, 3131, 3132, 3180, 3181, 3190, 3213, 3324, 3325, 3333, 3384, 3385, 3412, 3413, 3611, 3629, 4660, 4661, 4680, 4691, 4722, 4723, 4729, 4759, 4801, 4836, 4842, 4885, 4890, 5000, 5022, 5154, 5156, 5171, 5206, 5320, 5321, 5404, 5445, 5502, 5763, 5989, 5990, 6029, 6030, 6060, 6061, 6062, 6063, 6272, 6309]
 Humber Bay Park West Trl (lfn_id=19164); id=3361; geoid=30010170; 10 segments in db; 1 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [3387, 5657, 5658, 5709, 5710, 6466, 6467, 6472, 6485]
 Ashbridges Bay Park Trl (lfn_id=19168); id=3372; geoid=30002607; 19 segments in db; 11 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [3746, 4674, 4678, 4679, 4684, 4740, 4767, 5821]
 Beltline Trl (lfn_id=19169); id=699; geoid=30037557; 117 segments in db; 15 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [2868, 2951, 3009, 3052, 3120, 3121, 3122, 3133, 3159, 3164, 3169, 3200, 3245, 3254, 3255, 3268, 3269, 3272, 3278, 3279, 3299, 3300, 3302, 3311, 3329, 3330, 3331, 3334, 3335, 3336, 3337, 3364, 3415, 3425, 3436, 3492, 3493, 3494, 3495, 3496, 3539, 3540, 3546, 3596, 3597, 3601, 3659, 3660, 3715, 4559, 4591, 4633, 4656, 4675, 4704, 4666, 4671, 4672, 4673, 4737, 4748, 4804, 4774, 4827, 4861, 4862, 4866, 4872, 4915, 4916, 4917, 4919, 4926, 4927, 4962, 4963, 5016, 5334, 5335, 5891, 5895, 5896, 5927, 5928, 5929, 5932, 5933, 5977, 5978, 5980, 5981, 5987, 5988, 5991, 5992, 6000, 6001, 6004, 6006, 6011, 6074, 6075]
 Bond Park Trl (lfn_id=19170); id=6177; geoid=30052210; 4 segments in db; 4 segments found by walking; counts match, good
 Brookbanks Park Trl (lfn_id=19171); id=2152; geoid=30039450; 33 segments in db; 7 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [3075, 3423, 3473, 3504, 3578, 3579, 3598, 3614, 3615, 3616, 3834, 3835, 4711, 4787, 4878, 5936, 5937, 5938, 5939, 5940, 5941, 5942, 5951, 6069, 6070, 6071]
 Burnett Park Trl (lfn_id=19172); id=3463; geoid=30008064; 1 segments in db; 1 segments found by walking; counts match, good
 Chipping Greenbelt Trl (lfn_id=19173); id=3603; geoid=30005022; 2 segments in db; 2 segments found by walking; counts match, good
 Coronation Park Trl (lfn_id=19174); id=3671; geoid=30006473; 1 segments in db; 1 segments found by walking; counts match, good
 Duncairn Park Trl (lfn_id=19176); id=2825; geoid=30004636; 27 segments in db; 2 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [2865, 2952, 2961, 2981, 2982, 3045, 3080, 3086, 3087, 3089, 3095, 3107, 3108, 3230, 4543, 4609, 4599, 4604, 4616, 4642, 4658, 4725, 4770, 4771, 4772]
 Duncan Creek Trl (lfn_id=19177); id=3119; geoid=30006245; 17 segments in db; 4 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [3192, 3242, 3243, 3244, 3712, 4584, 4682, 4730, 4840, 4850, 4933, 5594, 5595]
 Earl Bales Park Trl (lfn_id=19178); id=3025; geoid=30008060; 13 segments in db; 7 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [4621, 4681, 4692, 5915, 5920, 5921]
 East Don River Trl (lfn_id=19179); id=2712; geoid=30033798; 83 segments in db; 11 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [2962, 2980, 3013, 3014, 3189, 3312, 3313, 3328, 3396, 3401, 3402, 3414, 3441, 3442, 3443, 3460, 3474, 3475, 3476, 3478, 3479, 3571, 3572, 3573, 3649, 4336, 4556, 4703, 4712, 4728, 4762, 4790, 4802, 4803, 4815, 4816, 4817, 4887, 4900, 4908, 4910, 4936, 5019, 5092, 5097, 5121, 5379, 5583, 5587, 5605, 5613, 5614, 5615, 5616, 5623, 5699, 5703, 5704, 5737, 5750, 5751, 5754, 5759, 6164, 6197, 6210, 6237, 6238, 6239, 6289, 6310, 6311]
 East Point Park Trl (lfn_id=19181); id=4825; geoid=30022776; 4 segments in db; 2 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [4971, 5448]
 Eglinton Flats Trl (lfn_id=19182); id=3047; geoid=30007232; 3 segments in db; 3 segments found by walking; counts match, good
 Eglinton Park Trl (lfn_id=19184); id=3365; geoid=30006435; 1 segments in db; 1 segments found by walking; counts match, good
 Festival Park Trl (lfn_id=19185); id=3400; geoid=30007966; 3 segments in db; 3 segments found by walking; counts match, good
 Fundy Bay Park Trl (lfn_id=19186); id=5226; geoid=30000860; 1 segments in db; 1 segments found by walking; counts match, good
 G Ross Lord Park Trl (lfn_id=19188); id=2820; geoid=30007891; 46 segments in db; 13 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [2821, 2823, 2886, 2911, 2921, 2926, 2960, 3214, 3462, 3562, 3563, 3564, 4610, 4645, 4832, 4851, 4886, 4897, 4898, 5143, 5152, 5153, 5155, 5157, 5168, 5169, 5186, 5236, 5244, 5656, 5662, 5975, 6051]
 Gaffney Park Trl (lfn_id=19189); id=4626; geoid=30030067; 7 segments in db; 7 segments found by walking; counts match, good
 Gatineau Hydro Corridor Trl (lfn_id=19190); id=2863; geoid=30001085; 84 segments in db; 6 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [2928, 3037, 3038, 3612, 3617, 3618, 3829, 3862, 4739, 4969, 4970, 5093, 5094, 5095, 5096, 5112, 5140, 5141, 5142, 5144, 5149, 5158, 5165, 5170, 5172, 5176, 5182, 5183, 5188, 5189, 5190, 5192, 5194, 5197, 5199, 5204, 5207, 5209, 5211, 5212, 5213, 5214, 5230, 5231, 5215, 5218, 5219, 5225, 5238, 5239, 5241, 5246, 5247, 5258, 5270, 5271, 5272, 5273, 5274, 5275, 5276, 5284, 5285, 5333, 5350, 5351, 5345, 5346, 5352, 5546, 5530, 5545, 5582, 5584, 5958, 6050, 6059, 6420]
 Glendora Park Trl (lfn_id=19191); id=3561; geoid=30005828; 4 segments in db; 4 segments found by walking; counts match, good
 Guildwood Park Trl (lfn_id=19192); id=5547; geoid=30036239; 4 segments in db; 2 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [5776, 5777]
 High Park Trl (lfn_id=19193); id=2890; geoid=30007468; 15 segments in db; 9 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [3622, 4869, 6196, 6209, 6325, 6344]
 Highland Creek Trl (lfn_id=19194); id=2117; geoid=30029888; 41 segments in db; 8 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [2795, 2837, 2839, 2849, 2854, 2867, 2872, 2875, 2882, 2895, 3310, 3370, 3672, 3675, 4585, 4586, 4588, 4590, 4620, 4625, 4654, 4687, 4690, 4702, 4708, 4726, 4760, 4873, 5069, 5292, 5683, 6031, 6032]
 Lake Shore Blvd East Trl (lfn_id=19195); id=3081; geoid=30004239; 48 segments in db; 30 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [3136, 3155, 3217, 3218, 3219, 3383, 3371, 3382, 3511, 3644, 3645, 4765, 5311, 5312, 5313, 5319, 5322, 5323]
 York Mills Valley Park Trl (lfn_id=19196); id=3529; geoid=30005928; 1 segments in db; 1 segments found by walking; counts match, good
 York Mills Park Trl (lfn_id=19197); id=4889; geoid=30005929; 1 segments in db; 1 segments found by walking; counts match, good
 York Mills CI Trl (lfn_id=19198); id=2950; geoid=30004461; 1 segments in db; 1 segments found by walking; counts match, good
 L'Amoreaux Steeles Recreation Trl (lfn_id=19199); id=2914; geoid=30000927; 23 segments in db; 5 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [2966, 2967, 2968, 2969, 3007, 4709, 4769, 5298, 5299, 5300, 5301, 5302, 5303, 5327, 5328, 5340, 5341, 5405]
 Withrow Park Trl (lfn_id=19200); id=6018; geoid=30040823; 7 segments in db; 7 segments found by walking; counts match, good
 Wilket Creek Trl (lfn_id=19201); id=1743; geoid=30038254; 50 segments in db; 10 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [2827, 2829, 2830, 2831, 2917, 2949, 2954, 2955, 2956, 2957, 2983, 2984, 2985, 3098, 3099, 3100, 3101, 3102, 3103, 3198, 3199, 3212, 3239, 3240, 3271, 4628, 4713, 4717, 4733, 4753, 4754, 4756, 4783, 4784, 4812, 4852, 4853, 4858, 5894, 5925]
 Lavender Creek Trl (lfn_id=19202); id=2840; geoid=30007384; 6 segments in db; 6 segments found by walking; counts match, good
 Linus Park Trl (lfn_id=19203); id=4921; geoid=30005594; 1 segments in db; 1 segments found by walking; counts match, good
 Littles Park Trl (lfn_id=19204); id=2923; geoid=30002398; 4 segments in db; 1 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [3234, 3235, 4651]
 Lower Don River Trl (lfn_id=19205); id=1524; geoid=30040420; 48 segments in db; 38 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [3172, 3753, 4669, 4953, 4956, 4959, 6411, 6413, 6414, 6415]
 Martin Goodman Trl (lfn_id=19206); id=1560; geoid=30043608; 145 segments in db; 40 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [2925, 3027, 3078, 3128, 3157, 3158, 3194, 3280, 3281, 3309, 3319, 3326, 3359, 3446, 3447, 3521, 3559, 3560, 3567, 3568, 3569, 3570, 3575, 3587, 3639, 3667, 3668, 3669, 3674, 3676, 3685, 3779, 3875, 4743, 4775, 4830, 4848, 4899, 4913, 4957, 4965, 4967, 4968, 4985, 4986, 4987, 4988, 4996, 5029, 5037, 5043, 5045, 5052, 5053, 5061, 5062, 5063, 5067, 5068, 5070, 5071, 5100, 5107, 5108, 5174, 5287, 5315, 5316, 5317, 5318, 5412, 5353, 5373, 5454, 5446, 5452, 5453, 5466, 5482, 5492, 5493, 5513, 5561, 5832, 5879, 6264, 6265, 6266, 6290, 6362, 6363, 6399, 6521, 6522, 6525, 6526, 6527, 6530, 6531, 6532, 6533, 6534, 6561, 6566, 6573]
 Meadowvale Rd Trl (lfn_id=19207); id=2887; geoid=30002458; 10 segments in db; 10 segments found by walking; counts match, good
 Newtonbrook Park Trl (lfn_id=19209); id=3482; geoid=30005894; 2 segments in db; 1 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [4888]
 West Highland Creek Trl (lfn_id=19210); id=2797; geoid=30001646; 155 segments in db; 6 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [2803, 2804, 2806, 2809, 2810, 2832, 2834, 2838, 2841, 2905, 2931, 2942, 2975, 2986, 2987, 2988, 2989, 2993, 3023, 3051, 3060, 3064, 3126, 3138, 3150, 3151, 3156, 3205, 3206, 3236, 3353, 3354, 3355, 3356, 3357, 3704, 3726, 3802, 3803, 3872, 3873, 3874, 4544, 4555, 4561, 4562, 4563, 4568, 4573, 4582, 4593, 4595, 4596, 4613, 4639, 4653, 4716, 4727, 4742, 4757, 4764, 4780, 4781, 4818, 4937, 4960, 5014, 4990, 4992, 4995, 5125, 5337, 5347, 5348, 5380, 5384, 5385, 5420, 5421, 5422, 5425, 5426, 5427, 5428, 5429, 5441, 5451, 5481, 5590, 5597, 5598, 5625, 5641, 5642, 5643, 5644, 5645, 5646, 5652, 5653, 5654, 5655, 5659, 5663, 5664, 5665, 5668, 5690, 5694, 5698, 5706, 5728, 5870, 5871, 5886, 5946, 5947, 5952, 5953, 5954, 5955, 5956, 5959, 5960, 5961, 5972, 5983, 6323, 6343, 6386, 6387, 6391, 6392, 6393, 6400, 6401, 6405, 6406, 6407, 6408, 6412, 6473, 6474, 6475, 6497, 6501, 6538, 6539, 6541]
 West Don River Trl (lfn_id=19211); id=2915; geoid=30004248; 60 segments in db; 9 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [2918, 2919, 2945, 2994, 3118, 3148, 3165, 3177, 3201, 3202, 3224, 3225, 3226, 3227, 3228, 3231, 3273, 3274, 3286, 3344, 3345, 3503, 3510, 3512, 3513, 3514, 3635, 3638, 3655, 3697, 3734, 4676, 4686, 4731, 4744, 4745, 4751, 4763, 4766, 4779, 4810, 4811, 4829, 4847, 4867, 4891, 4952, 5782, 6045, 6052, 6053]
 Trinity Bellwoods Park Trl (lfn_id=19212); id=5210; geoid=30036896; 5 segments in db; 5 segments found by walking; counts match, good
 Terry Fox Park Trl (lfn_id=19213); id=3079; geoid=30000857; 2 segments in db; 1 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [5336]
 Taylor Creek Trl (lfn_id=19214); id=2852; geoid=30001716; 81 segments in db; 5 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [2888, 2891, 2892, 2937, 2935, 2936, 2943, 2947, 2948, 2953, 2973, 2974, 2979, 2995, 2996, 2997, 2998, 2999, 3054, 3065, 3066, 3067, 3069, 3070, 3071, 3072, 3093, 3113, 3114, 3124, 3137, 3145, 3146, 3182, 3249, 3232, 3233, 3250, 3251, 3321, 3298, 3322, 3419, 3420, 3429, 3430, 3459, 3537, 3694, 3695, 3698, 3794, 4594, 4612, 4670, 4697, 4698, 4700, 4721, 4732, 4741, 4768, 4782, 4796, 4828, 4845, 4860, 4920, 4949, 5198, 5522, 5523, 5876, 5877, 5900, 5901]
 Talwood Park Trl (lfn_id=19215); id=3044; geoid=30004541; 2 segments in db; 2 segments found by walking; counts match, good
 Sanwood Park Trl (lfn_id=19216); id=3024; geoid=30000555; 2 segments in db; 2 segments found by walking; counts match, good
 Rouge Valley Park Trl (lfn_id=19217); id=4652; geoid=30002392; 1 segments in db; 1 segments found by walking; counts match, good
 Riverdale Park West Trl (lfn_id=19218); id=2944; geoid=30003579; 8 segments in db; 8 segments found by walking; counts match, good
 Riverdale Park East Trl (lfn_id=19219); id=2910; geoid=30003586; 3 segments in db; 3 segments found by walking; counts match, good
 Rippleton Park Trl (lfn_id=19220); id=3104; geoid=30004534; 4 segments in db; 3 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [3105]
 Queen's Greenbelt Trl (lfn_id=19221); id=4777; geoid=30006693; 3 segments in db; 2 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [4856]
 Pelmo Park Trl (lfn_id=19222); id=3574; geoid=30007208; 2 segments in db; 2 segments found by walking; counts match, good
 Parliament Square Park Trl (lfn_id=19223); id=3343; geoid=30003469; 1 segments in db; 1 segments found by walking; counts match, good
 North Park Trl (lfn_id=19224); id=3160; geoid=30006779; 9 segments in db; 5 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [3440, 3484, 4667, 4808]
 Rosedale Valley Trl (lfn_id=19233); id=2964; geoid=30006016; 10 segments in db; 10 segments found by walking; counts match, good
 Dixon Park Trl (lfn_id=19239); id=3776; geoid=30031304; 2 segments in db; 2 segments found by walking; counts match, good
 Maclennan Trl (lfn_id=19241); id=3631; geoid=30009533; 3 segments in db; 3 segments found by walking; counts match, good
 WW E William R Allen S Elm Ridge (lfn_id=19244); id=3498; geoid=30009603; 1 segments in db; 1 segments found by walking; counts match, good
 Elizabeth Simcoe Park Trl (lfn_id=19274); id=3019; geoid=30010670; 4 segments in db; 3 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [5150]
 Mimico Waterfront Park Trl (lfn_id=19296); id=5344; geoid=30022759; 6 segments in db; 4 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [6247, 6312]
 West Toronto Rail Path Trl (lfn_id=19301); id=3260; geoid=30012023; 11 segments in db; 11 segments found by walking; counts match, good
 McCowan District Park Trl (lfn_id=19305); id=3804; geoid=30021303; 35 segments in db; 2 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [4755, 4838, 5249, 5410, 5411, 5761, 5762, 5785, 5791, 5793, 5798, 5799, 5800, 5801, 5805, 5816, 5833, 5834, 5835, 5847, 5848, 5849, 5850, 5852, 5853, 5855, 5856, 5857, 5858, 5860, 5861, 5862, 5863]
 Betty Sutherland Trl (lfn_id=19322); id=3306; geoid=30005275; 15 segments in db; 12 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [4907, 6341, 6342]
 Harrison Park Trl (lfn_id=19351); id=5307; geoid=30013135; 3 segments in db; 2 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [5309]
 Monarch Park Trl (lfn_id=19352); id=3640; geoid=30013159; 6 segments in db; 5 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [3678]
 Berner Trail Park Trl (lfn_id=19355); id=3301; geoid=30013318; 8 segments in db; 4 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [3380, 4695, 4821, 4846]
 Wickson Trail Park Trl (lfn_id=19356); id=3246; geoid=30013279; 12 segments in db; 4 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [3360, 3367, 3535, 3536, 4668, 4705, 4797, 4798]
 Christie Pits Trl (lfn_id=19358); id=3284; geoid=30039498; 4 segments in db; 4 segments found by walking; counts match, good
 West Humber Trl (lfn_id=19360); id=5026; geoid=30016066; 43 segments in db; 8 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [5027, 5443, 5486, 5487, 5509, 6082, 6083, 6134, 6125, 6126, 6156, 6158, 6159, 6169, 6174, 6183, 6217, 6233, 6234, 6235, 6254, 6255, 6256, 6277, 6300, 6279, 6280, 6281, 6282, 6286, 6301, 6313, 6314, 6315, 6360]
 Kipling Ave Bicycle Trl (lfn_id=19415); id=3687; geoid=30010499; 7 segments in db; 7 segments found by walking; counts match, good
 Ln W Thirteenth S Lake Shore (lfn_id=19460); id=5041; geoid=30013654; 2 segments in db; 2 segments found by walking; counts match, good
 Scarborough Railpath Trl (lfn_id=19482); id=5200; geoid=30019805; 15 segments in db; 1 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [5201, 5202, 5203, 5227, 5228, 5354, 5355, 5356, 5357, 5358, 5531, 5944, 6067, 6404]
 Finch Corridor Trl (lfn_id=19483); id=3020; geoid=30039734; 68 segments in db; 13 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [3722, 4435, 4998, 5148, 5166, 5167, 5184, 5185, 5187, 5193, 5195, 5196, 5217, 5232, 5233, 5234, 5237, 5240, 5251, 5252, 5253, 5254, 5255, 5264, 5280, 5281, 5282, 5283, 5296, 5314, 5324, 5325, 5338, 5342, 5343, 5359, 5360, 5361, 5362, 5365, 5366, 5621, 5867, 5880, 5883, 5884, 5957, 5994, 6024, 6025, 6035, 6388, 6398, 6517, 6518]
 Leaside CN Rail Spur Trl (lfn_id=19485); id=5175; geoid=444634; 5 segments in db; 4 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [6434]
 Morningside Park Trl (lfn_id=19486); id=5286; geoid=30021199; 7 segments in db; 5 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [5291, 5398]
 Viewmount Park Trl (lfn_id=19488); id=4938; geoid=30021482; 2 segments in db; 2 segments found by walking; counts match, good
 Ramsden Park Trl (lfn_id=19489); id=5339; geoid=30021830; 2 segments in db; 2 segments found by walking; counts match, good
 Humber River Recreational Trl (lfn_id=19508); id=1086; geoid=30039113; 204 segments in db; 4 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [3303, 3549, 3550, 3621, 3711, 3720, 3724, 3729, 3730, 3731, 3738, 3739, 3740, 3741, 3742, 3773, 3774, 3780, 3842, 4905, 4906, 4883, 4884, 4979, 4980, 4981, 4991, 4993, 5001, 5002, 5120, 5413, 5191, 5409, 5386, 5387, 5388, 5389, 5390, 5391, 5392, 5400, 5401, 5402, 5403, 5407, 5408, 5436, 5437, 5444, 5458, 5459, 5460, 5464, 5465, 5472, 5473, 5474, 5475, 5476, 5477, 5496, 5478, 5479, 5484, 5485, 5488, 5489, 5490, 5491, 5494, 5495, 5497, 5499, 5500, 5501, 5503, 5504, 5505, 5506, 5508, 5510, 5511, 5512, 5517, 5518, 5519, 5521, 5524, 5525, 5534, 5535, 5536, 5537, 5538, 5539, 5542, 5543, 5544, 5552, 5553, 5554, 5555, 5556, 5585, 5677, 5680, 5681, 5682, 5738, 5739, 5740, 5945, 5995, 5996, 5997, 5998, 6014, 6015, 6072, 6073, 6076, 6078, 6079, 6080, 6081, 6136, 6137, 6188, 6129, 6130, 6186, 6139, 6140, 6141, 6142, 6143, 6157, 6165, 6166, 6167, 6168, 6171, 6172, 6173, 6175, 6176, 6182, 6185, 6187, 6189, 6190, 6191, 6203, 6204, 6212, 6213, 6214, 6219, 6226, 6227, 6228, 6229, 6297, 6252, 6253, 6298, 6261, 6262, 6263, 6299, 6273, 6274, 6275, 6276, 6326, 6283, 6296, 6358, 6316, 6418, 6331, 6332, 6333, 6334, 6357, 6355, 6356, 6359, 6367, 6377, 6379, 6389, 6435, 6436, 6451, 6452, 6455, 6544, 6545]
 Grey Abbey Park Trl (lfn_id=19561); id=5612; geoid=30029501; 2 segments in db; 2 segments found by walking; counts match, good
 Bluffer's Park Trl (lfn_id=19562); id=5602; geoid=30029558; 1 segments in db; 1 segments found by walking; counts match, good
 Harrison Properties Trl (lfn_id=19563); id=5632; geoid=30029567; 2 segments in db; 2 segments found by walking; counts match, good
 Oakvale Trl (lfn_id=19572); id=5023; geoid=30030060; 2 segments in db; 2 segments found by walking; counts match, good
 Queen's Park Trl (lfn_id=19573); id=4983; geoid=30030182; 6 segments in db; 5 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [5695]
 Port Union Village Common Trl (lfn_id=19576); id=5671; geoid=30031756; 6 segments in db; 2 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [5672, 5673, 5674, 5679]
 Woodbine Park Trl (lfn_id=19601); id=5809; geoid=30035290; 9 segments in db; 9 segments found by walking; counts match, good
 David A Balfour Park Trl (lfn_id=19611); id=5790; geoid=30036529; 9 segments in db; 9 segments found by walking; counts match, good
 Centennial Park Trl (lfn_id=19612); id=5783; geoid=30024847; 3 segments in db; 1 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [5784, 5787]
 Canoe Landing Park Trl (lfn_id=19614); id=5768; geoid=30036719; 8 segments in db; 8 segments found by walking; counts match, good
 Natal Park Trl (lfn_id=19631); id=4954; geoid=30037245; 4 segments in db; 4 segments found by walking; counts match, good
 Chorley Park Trl (lfn_id=19676); id=5971; geoid=30040170; 7 segments in db; 5 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [5976, 6012]
 Don Valley Brick Works Trl (lfn_id=19678); id=3797; geoid=30040197; 16 segments in db; 14 segments found by walking; BAD! counts DO NOT MATCH!
+  offenders: [6046, 6047]
 Merrill Bridge Road Park Trl (lfn_id=19680); id=6055; geoid=1139914; 1 segments in db; 1 segments found by walking; counts match, good
 Sir Casimir Gzowski Park Trl (lfn_id=19685); id=6572; geoid=30006464; 1 segments in db; 1 segments found by walking; counts match, good
 Humber Bay Shores Park Trl (lfn_id=19689); id=6224; geoid=30008232; 16 segments in db; 16 segments found by walking; counts match, good

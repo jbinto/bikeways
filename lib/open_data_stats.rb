@@ -5,8 +5,6 @@ require 'segment_walker'
 class OpenDataStats
   def walk_all_routes
     for id in all_feature_ids
-      #print "feature lfn=#{id};"
-
       # not in sequence, directly from database
       segments = segments_by_feature_id(id)
 
@@ -26,6 +24,13 @@ class OpenDataStats
         puts "counts match, good"
       else
         puts "BAD! counts DO NOT MATCH!"
+
+        # which ones did we walk? we need to compare to the ones 
+        walked_ids = walked_segments.map { |x| x.id }
+        segment_ids = segments.map {|x| x.id }
+        difference = segment_ids - walked_ids
+
+        puts "  offenders: #{difference}"
       end
     end
   end
