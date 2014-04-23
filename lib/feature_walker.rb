@@ -1,4 +1,5 @@
 require 'logging_helpers'
+require 'segment_walker'
 
 class FeatureWalker
   def initialize(opts)
@@ -59,7 +60,7 @@ class FeatureWalker
     walker = SegmentWalker.new(segment: segment)
     walked_segments = walker.ordered_segments
 
-    print "#{walked_segments.count} segments found by walking; "
+    debug "#{walked_segments.count} segments found by walking; "
 
     walked_segments
   end

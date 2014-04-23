@@ -26,8 +26,8 @@ namespace :opendata do
 
   namespace :stats do
     desc "uses SegmentWalker to walk all of the routes, output to console"
-    task walk_all_routes: :environment do
-      OpenDataStats.new.walk_all_routes
+    task display_all_routes: :environment do
+      OpenDataStats.new.display_all_routes
     end
   end
 end
