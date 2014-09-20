@@ -5,64 +5,30 @@ require 'action_view'
 include ActionView::Helpers::NumberHelper   # for number_to_human_size
 
 require 'fileutils'
+require 'open_data_file'
 
 ## TODO: Unit test this class using fakefs gem (& figure out how to mock out Zip somehow)
-
 class OpenDataImport
-  OPENDATA_URL = 'http://opendata.toronto.ca/gcc/bikeways_wgs84.zip'
-  OPENDATA_DIR = Rails.root.join('vendor/opendata')
-  OPENDATA_ZIP_FILE = File.join(OPENDATA_DIR, 'bikeways_wgs84.zip')
-  OPENDATA_SHAPEFILE = Rails.root.join('vendor', 'opendata', 'CENTRELINE_BIKEWAY_OD_WGS84')
+  BIKEWAYS_URL = 'http://opendata.toronto.ca/gcc/bikeways_wgs84.zip'
+  BIKEWAYS_ZIPFILE = File.join(OpenDataFile::OPENDATA_DIR, 'bikeways_wgs84.zip')
+  BIKEWAYS_SHAPEFILE = File.join(OpenDataFile::OPENDATA_DIR, 'CENTRELINE_BIKEWAY_OD_WGS84')
 
   def initialize(opts = {})
-    @opendata_url = opts[:opendata_url] ||= OPENDATA_URL
-    @opendata_dir = opts[:opendata_dir] ||= OPENDATA_DIR
-    @opendata_zip_file = opts[:opendata_zip_file] ||= OPENDATA_ZIP_FILE
     @force = opts[:force] ||= false
+
+    @bikeway_file = OpenDataFile.new(
+      url: BIKEWAYS_URL,
+      zipfile: BIKEWAYS_ZIPFILE,
+      shapefile: BIKEWAYS_SHAPEFILE,
+      force: @force
+    )
   end
 
   def reset
-    download && unzip && import
+    @bikeway_file.download && @bikeway_file.unzip && import_bikeway_file
   end
 
-  def download
-    if File.exists?(OPENDATA_ZIP_FILE)
-      print "#{OPENDATA_ZIP_FILE} already exists"
-      unless @force
-        puts ", please delete to redownload or use rake opendata:reset to start over"
-        return false
-      end
-    end
-
-    FileUtils.mkdir_p OPENDATA_DIR
-    print "downloading #{OPENDATA_URL} ... "
-    File.open(OPENDATA_ZIP_FILE, 'wb') do |f|
-      len = f.write HTTParty.get(OPENDATA_URL).parsed_response
-      puts "#{number_to_human_size(len)} received"
-    end
-
-    true
-  end
-
-  def unzip
-    Zip::File.open(OPENDATA_ZIP_FILE) do |zip|
-      zip.each do |file|
-        dest = File.join('vendor/opendata', file.to_s)
-        if File.exists? dest
-          puts "already exists, skipping: #{file}"
-          next
-        end
-
-        puts "extracting: #{file}"
-        file.extract File.join('vendor/opendata', file.to_s)
-      end
-    end
-
-    true
-  end
-
-
-  def import
+  def import_bikeway_file
     BikewaySegment.transaction do
       BikewaySegment.delete_all
 
@@ -71,7 +37,7 @@ class OpenDataImport
       ActiveRecord::Base.connection.reset_pk_sequence!('bikeway_segments')
 
       factory = RGeo::Geographic.spherical_factory(:srid => 4326)
-      RGeo::Shapefile::Reader.open('vendor/opendata/CENTRELINE_BIKEWAY_OD_WGS84', :factory => factory) do |file|
+      RGeo::Shapefile::Reader.open(@bikeway_file.shapefile, :factory => factory) do |file|
         index = 0
         file.each do |record|
           index += 1
