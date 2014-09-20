@@ -53,20 +53,39 @@ powder link
 
 ## Usage (staging/production):
 
-Use [jbinto/bikeways-ansible-playbook](https://github.com/jbinto/bikeways-ansible-playbook) to provision a server.
+Use [jbinto/bikeways-ansible-playbook](https://github.com/jbinto/bikeways-ansible-playbook) to provision a server. Re-execute that playbook regularly to keep the server patched and up to date.
 
-Use Capistrano 3 to deploy. Edit `config/deploy/staging.rb` (where `staging` an arbitrary name for my target, that happens to match my RAILS_ENV).
+I use Capistrano 3 to deploy this Rails codebase. Edit `config/deploy/staging.rb` (where `staging` an arbitrary name). Here, you can set your `RAILS_ENV` and hostname. There can and will be multiple environments.
 
-To deploy, run
+Deployment is launched via SSH, which must be correctly configured (keys for the current user). Capistrano actually pulls code a branch of this Github repo, so make sure you push first. Edit `config/deploy.rb` to tweak this.
+
+To deploy, run:
 
 ```
 cap staging deploy
 ```
 
-Other useful `cap` commands, scrounged from my `history`:
+Note: The specs are **run locally**, not on the remote server (seems strange, but it's also strange to have a test runner on a production server). If there are spec troubles, ensure you are in the Rails root and run `RAILS_ENV=test bundle exec db:reset`, this should fix things.
+
+The deploy command "should" perform all necessary work if starting from scratch.
+
+Some useful commands just in case:
 
 ```
 cap staging db:drop
+cap staging db:create
+cap staging deploy:migrate
 cap staging opendata:reset
+```
+
+And to restart the server (which must be done for practically all Rails deployments):
+
+```
 cap staging rails:restart
 ```
+
+For more info look at `config/deploy.rb`, there's quite a bit going on there that took a while to figure out. Capistrano 3 is new and quite different, and there's not much documentation.
+
+## Usage (Heroku)
+
+Not recommended. Heroku only offers PostGIS for production tier databases, which are pricey.
