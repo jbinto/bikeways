@@ -26,6 +26,8 @@
 #
 
 class BikewaySegment < ActiveRecord::Base
+  belongs_to :bikeway
+
   def kml
     result = BikewaySegment.select('*, st_askml(st_transform(geom, 4326)) as _kml').where(:id => self.id).first
     result._kml
