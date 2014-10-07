@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.1.1'
+ruby '2.1.2'
 
 # It's a little roundabout.
 # Since Rails 4.1, secrets defined in secrets.yml. But in production, they go to ENV.
