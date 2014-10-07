@@ -11,4 +11,6 @@ Bikeways::Application.routes.draw do
     end
   end
 
+  resources :bikeways
+
 end

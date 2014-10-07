@@ -1,0 +1,19 @@
+%h1= @bikeway.to_s
+
+.row
+  .col-xs-12
+    %table.table
+      %thead
+        %th id
+        %th city_geo_id
+        %th city_lfn_id
+        %th full_street_name
+        %th bikeway_type
+      %tbody
+      - @bikeway.bikeway_segments.each do |segment|
+        %tr
+          %td= link_to segment.id, segment
+          %td= segment.city_geo_id
+          %td= segment.city_linear_feature_name_id
+          %td= segment.full_street_name
+          %td= segment.bikeway_type
