@@ -51,6 +51,8 @@ rake opendata:init
 powder link
 ```
 
+Note that some Google Maps API require a callback URL to provide KML data. This means that maps may not work in development, since Google is trying to reach an internal address. However, this can be mitigated using https://localtunnel.me/ which is really cool.
+
 ## Usage (staging/production):
 
 Use [jbinto/bikeways-ansible-playbook](https://github.com/jbinto/bikeways-ansible-playbook) to provision a server. Re-execute that playbook regularly to keep the server patched and up to date.
