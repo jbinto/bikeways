@@ -26,6 +26,7 @@ class OpenDataImport
 
   def reset
     @bikeway_file.download && @bikeway_file.unzip && import_bikeway_file
+    populate_bikeway_table
   end
 
   def import_bikeway_file
@@ -74,22 +75,49 @@ class OpenDataImport
   end
 
   def populate_bikeway_table
-    for id in BikewaySegment.all_feature_ids
-      walker = FeatureWalker.new(feature_id: id)
-      paths = walker.paths
+    Bikeway.transaction do
+      Bikeway.delete_all
 
-      path_ids = paths.map { |list| list.map { |path| path.id } }
+      # walk through each & every single BikewaySegment using FeatureWalker
+      for id in BikewaySegment.all_feature_ids
+        walker = FeatureWalker.new(feature_id: id)
+        paths = walker.paths
 
-      if path_ids.length > 1
+        # console debugging
+        path_ids = paths.map { |list| list.map { |path| path.id } }  # e.g. --> [[1561, 1601, 1602], [6124]]
+        # e.g:
+        #   lfn_id=3786 full_street_name=Kingston Rd num_paths=6 paths:
+        #    --> [[1593, 1331, 1330, 1329, 1328, 1390, 1389, 1388], [1810], [1964, 6602], [2419, 2393, 2324, 4446, 2306], [5650, 2464, 2379, 2360], [4605]]
         puts "lfn_id=#{id} full_street_name=#{BikewaySegment.full_street_name(id)} num_paths=#{paths.length} paths:"
         puts "  --> #{path_ids}"
+
+
+        # Since there are discontiguous routes that share the same street name, we have to divide
+        # each distinct street name into contiguous portions.
+
+        portion = 1
+        paths.each do |segments|
+          # create the Bikeway record for this portion
+          bikeway = Bikeway.create do |b|
+            b.bikeway_name = segments.first.full_street_name
+            b.portion = portion
+            b.description = "Insert description here."
+            # b.bikeway_route_number = ...
+          end
+          puts "Created #{bikeway.to_s}"
+
+          # point each of the BikewaySegments back to the Bikeway we just created
+          segments.each do |segment|
+            segment.bikeway = bikeway
+            segment.save
+          end
+
+          portion += 1
+        end
       end
-    end
-  end
-
-end
-
-
+    end # transaction
+  end #def
+end #class
 
 
 
