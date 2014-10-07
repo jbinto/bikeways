@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140412004920) do
+ActiveRecord::Schema.define(version: 20141007034014) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -38,6 +38,17 @@ ActiveRecord::Schema.define(version: 20140412004920) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.spatial  "geom",                        limit: {:srid=>4326, :type=>"geometry"}
+    t.integer  "bikeway_id"
+  end
+
+  add_index "bikeway_segments", ["bikeway_id"], :name => "index_bikeway_segments_on_bikeway_id"
+
+  create_table "bikeways", force: true do |t|
+    t.string  "bikeway_name"
+    t.integer "portion"
+    t.string  "description"
+    t.integer "length_m"
+    t.integer "bikeway_route_number"
   end
 
   create_table "users", force: true do |t|
