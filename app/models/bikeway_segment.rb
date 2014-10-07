@@ -28,6 +28,14 @@
 class BikewaySegment < ActiveRecord::Base
   belongs_to :bikeway
 
+  def self.all_feature_ids
+    BikewaySegment.pluck(:city_linear_feature_name_id).uniq.sort
+  end
+
+  def self.full_street_name(feature_id)
+    BikewaySegment.where(:city_linear_feature_name_id => feature_id).first!.full_street_name
+  end
+
   def kml
     result = BikewaySegment.select('*, st_askml(st_transform(geom, 4326)) as _kml').where(:id => self.id).first
     result._kml
