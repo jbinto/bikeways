@@ -9,6 +9,14 @@ class FeatureWalker
     end
   end
 
+  def self.all_feature_ids
+    BikewaySegment.pluck(:city_linear_feature_name_id).uniq.sort
+  end
+
+  def self.full_street_name(feature_id)
+    BikewaySegment.where(:city_linear_feature_name_id => feature_id).first!.full_street_name
+  end
+
   # Analyzes the feature pointed to by @feature_id, and returns an array containing all contiguous paths.
   # Each entry in the returned array is itself an array of BikewaySegment records, in the correct sequence*.
   # For example:
