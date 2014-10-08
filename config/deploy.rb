@@ -78,7 +78,7 @@ namespace :deploy do
   before :deploy, "deploy:check_revision"
   before :deploy, "deploy:run_tests"
   after 'deploy:migrate', 'opendata:init'
-  after 'deploy:symlink:shared', 'deploy:compile_assets_locally'
+  #after 'deploy:symlink:shared', 'deploy:compile_assets_locally'
   after :finishing, 'deploy:cleanup'
 
 end
