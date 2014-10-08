@@ -40,3 +40,28 @@ APP.bikeway_segments =
         # handler.fitMapToBounds()
       )
       console.log "exit bikeway_segments#show"
+
+APP.bikeways =
+  init: ->
+    $ ->
+      console.log "bikeways (controller)"
+
+  show: ->
+    $ ->
+      console.log "enter bikeways#show"
+      kmlUrl = $('#map').data('kml-url')
+      handler = Gmaps.build('Google')
+      opts =
+        # see https://developers.google.com/maps/documentation/javascript/reference?hl=fr#MapOptions
+        provider: {
+          zoom: 16
+        }
+        internal: { id: 'map' }
+      handler.buildMap(opts, ->
+        kmls = handler.addKml(
+          { url: kmlUrl }
+        )
+        # handler.bounds.extendWith(markers)
+        # handler.fitMapToBounds()
+      )
+      console.log "exit bikeways#show"
