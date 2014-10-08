@@ -54,7 +54,7 @@ gem 'activerecord-postgis-adapter',
 
 gem 'rgeo'
 
-gem 'jquery-datatables-rails', git: 'git://github.com/jbinto/jquery-datatables-rails.git'
+gem 'jquery-datatables-rails', '~> 2.2.3'
 
 # http://railscasts.com/episodes/340-datatables
 gem 'will_paginate'

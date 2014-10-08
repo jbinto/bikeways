@@ -8,7 +8,8 @@
 
 // XXX make this only required on the bikeway_segments#index page
 //= require dataTables/jquery.dataTables
-//= require dataTables/jquery.dataTables.bootstrap3
+//= require dataTables/bootstrap/3/jquery.dataTables.bootstrap
+
 
 // I have come to the conclusion that Turbolinks is evil.
 //
