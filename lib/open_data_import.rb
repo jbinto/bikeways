@@ -75,6 +75,11 @@ class OpenDataImport
   end
 
   def populate_bikeway_table
+    if Bikeway.count > 0
+      puts "There are already #{Bikeway.count} Bikeway records, skipping populate_bikeway_table"
+      return
+    end
+
     Bikeway.transaction do
       Bikeway.delete_all
 
