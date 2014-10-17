@@ -120,6 +120,12 @@ class OpenDataImport
         # there's another 100m stretch over a bridge. They're not the same route and shouldn't be
         # counted as such.
 
+        if full_street_name.end_with? ' Trl'
+          # The city data provided for trails should be grouped together even if it is geographically
+          # discontiguous.
+          portions = [portions.flatten]   # e.g. [[a,b,c],[d,e]] => [[a,b,c,d,e]]
+        end
+
         portion = 1
         portions.each do |segments|
           # create the Bikeway record for this portion
