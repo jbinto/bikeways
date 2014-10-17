@@ -136,8 +136,7 @@ class OpenDataImport
             segment.save
           end
 
-          # experiment: comment this out. Everything is one portion. See how bad the data is.
-          # portion += 1
+          portion += 1
         end
       end
     end # transaction
