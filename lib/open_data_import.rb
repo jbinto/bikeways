@@ -6,6 +6,7 @@ include ActionView::Helpers::NumberHelper   # for number_to_human_size
 
 require 'fileutils'
 require 'open_data_file'
+require 'gis_tools'
 
 ## TODO: Unit test this class using fakefs gem (& figure out how to mock out Zip somehow)
 class OpenDataImport
@@ -72,6 +73,7 @@ class OpenDataImport
             s.bikeway_type = record["CP_TYPE"]
 
             s.geom = record.geometry
+            s.length_m = GISTools.length_m(s.geom)
           end
         end
       end

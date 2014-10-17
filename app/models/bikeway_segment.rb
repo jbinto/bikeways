@@ -31,8 +31,6 @@ require 'gis_tools'
 class BikewaySegment < ActiveRecord::Base
   belongs_to :bikeway
 
-  before_save :assign_length_m_property
-
   def self.all_feature_ids
     BikewaySegment.pluck(:city_linear_feature_name_id).uniq.sort
   end
@@ -71,13 +69,4 @@ class BikewaySegment < ActiveRecord::Base
   def length_calculated
     GISTools.length_m(self.geom)
   end
-
-  # TODO: next_feature
-  # or: separate next into "this_feature_only: true/fale"
-
-  private
-  def assign_length_m_property
-    self[:length_m] = self.length_calculated
-  end
-
 end
