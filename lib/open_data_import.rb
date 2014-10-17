@@ -133,6 +133,7 @@ class OpenDataImport
             b.bikeway_name = segments.first.full_street_name
             b.portion = portion
             b.description = "Insert description here."
+            b.length_m = segments.map { |s| s.length_m }.sum
             # b.bikeway_route_number = ...
           end
 

@@ -22,7 +22,9 @@
 #  bikeway_type                :string(255)
 #  created_at                  :datetime
 #  updated_at                  :datetime
-#  geom                        :spatial          geometry, 2019
+#  geom                        :spatial          geometry, 4326
+#  bikeway_id                  :integer
+#  length_m                    :float
 #
 
 require 'spec_helper'
