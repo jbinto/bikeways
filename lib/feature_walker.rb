@@ -2,6 +2,27 @@ require 'logging_helpers'
 require 'segment_walker'
 
 class FeatureWalker
+  # n.b. "Feature" is a GIS term:
+  # "a collection of geographic features with the same geometry type (such as point, line, or polygon)"
+  #
+  # The city data is provided as an ESRI shapefile which is essentially a list of features
+  # (specifically, lines), with attached metadata. One useful piece of metadata is the
+  # `city_linear_feature_name_id`, which essentially groups together all entries with the
+  # same "street name".
+  #
+  # This class is a super-set of SegmentWalker. It will provide a list of all contiguous paths
+  # sharing the same `city_linear_feature_name_id`.
+  #
+  # usage:
+  #   walker = FeatureWalker.new(feature_id: 10900)
+  #   paths = walker.paths
+  #   path_ids = paths.map { |list| list.map { |path| path.id } }
+  #   # => [[4766, 1314, 1318, 4141, 1125],
+  #         [1797, 1795, 4192, 4183, 1335, 4141, 1125],
+  #         [1797, 1796, 1406, 3515],
+  #         [3396, 4897, 3516],
+  #         [3782]]
+
   def initialize(opts)
     @feature_id = nil
     if opts.key?(:feature_id)

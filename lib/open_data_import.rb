@@ -25,11 +25,15 @@ class OpenDataImport
   end
 
   def reset
+    # XXX: ugly, need some sort of state machine here?
     @bikeway_file.download && @bikeway_file.unzip && import_bikeway_file
     populate_bikeway_table
   end
 
   def import_bikeway_file
+    # Uses RGeo to import the city provided ESRI shapefile. Inserts the city record as-is
+    # into a PostGIS table, `bikeway_segments`.
+
     BikewaySegment.transaction do
       BikewaySegment.delete_all
 
@@ -75,6 +79,24 @@ class OpenDataImport
   end
 
   def populate_bikeway_table
+    # The city data imported into `bikeway_segments` is appx. 6,500 lines on a map,
+    # with little clearly defined logical relationship. This code exists to provide
+    # some structure to these lines.
+    #
+    # A "Bikeway" is a logical grouping of bikeway_segments (e.g. the city provided records).
+    #
+    # This is created by applying several bits of logic. This code is messy.
+    #
+    # 1) The city provides "next/prev intersection" metadata for each `bikeway_segment`.
+    #    This is the first level of grouping, and it is defined by the city's data.
+    #
+    # 2) We can also group by the `full_street_name` field, though keep in mind that just
+    #    because a group of segments share a name doesn't mean they are geographically contiguous.
+    #    This is why each Bikeway can have multiple `portion`s.
+    #
+    # The FeatureWalker handles both #1 and #2.
+
+
     Bikeway.transaction do
       Bikeway.delete_all
 
@@ -91,9 +113,11 @@ class OpenDataImport
         puts "lfn_id=#{id} full_street_name=#{BikewaySegment.full_street_name(id)} num_paths=#{paths.length} paths:"
         puts "  --> #{path_ids}"
 
-
         # Since there are discontiguous routes that share the same street name, we have to divide
-        # each distinct street name into contiguous portions.
+        # each distinct street name into contiguous portions. For example, there's a bike lane
+        # for a few 100m on Bayview Av near the Don Valley, and an entirely different part of town
+        # there's another 100m stretch over a bridge. They're not the same route and shouldn't be
+        # counted as such.
 
         portion = 1
         paths.each do |segments|

@@ -1,4 +1,17 @@
 class SegmentWalker
+  # SegmentWalker takes an arbitrary BikewaySegment and "walks" through in both
+  # directions using the city-provided "from intersection" and "to intersection"
+  # metadata.
+  #
+  # usage:
+  #
+  #  walker = SegmentWalker.new(segment: BikewaySegment.first)
+  #  walker = SegmentWalker.new(segment_id: 1)
+  #
+  #  segments = walker.ordered_segments
+  #  segments.map { |s| s.id }
+  #  # => [5191, 1, 2, 5192, 90, 3833, 3006, 4815, 86, 3619, 3620]
+
   def initialize(opts)
     @segment = nil
     if opts.key?(:segment)
