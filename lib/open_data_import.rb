@@ -128,13 +128,14 @@ class OpenDataImport
             b.description = "Insert description here."
             # b.bikeway_route_number = ...
           end
-          puts "Created #{bikeway.to_s}"
 
           # point each of the BikewaySegments back to the Bikeway we just created
           segments.each do |segment|
             segment.bikeway = bikeway
             segment.save
           end
+
+          puts "Created #{bikeway.to_s}"
 
           portion += 1
         end
