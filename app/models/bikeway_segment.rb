@@ -1,3 +1,5 @@
+require 'gis_tools'
+
 # == Schema Information
 #
 # Table name: bikeway_segments
@@ -57,8 +59,14 @@ class BikewaySegment < ActiveRecord::Base
     ).first
   end
 
+  # XXX: this is view level stuff, move it to a helper or something
+  # certainly not in the model.
   def style_id
     STYLE_ID_CODES[self.bikeway_type]
+  end
+
+  def length_calculated
+    GISTools.length_rgeo(self.geom)
   end
 
   # TODO: next_feature
