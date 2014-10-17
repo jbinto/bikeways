@@ -1,28 +1,3 @@
-%h1= @bikeway.to_s
+%h1= "Bikeway: #{@bikeway.to_s}"
 
-.row
-  .col-xs-12
-    .google-map-canvas
-      #map{data: { kml_url: @kml_url }}
-
-.row
-  .col-xs-12
-    %table.table
-      %thead
-        %th id
-        %th city_geo_id
-        %th city_lfn_id
-        %th full_street_name
-        %th bikeway_type
-      %tbody
-      - @bikeway.bikeway_segments.each do |segment|
-        %tr
-          %td= link_to segment.id, segment
-          %td= segment.city_geo_id
-          %td= segment.city_linear_feature_name_id
-          %td= segment.full_street_name
-          %td= segment.bikeway_type
-
-%script{src: '//maps.google.com/maps/api/js?v=3.13&sensor=false&libraries=geometry'}
-%script{src: '//google-maps-utility-library-v3.googlecode.com/svn/tags/markerclustererplus/2.0.14/src/markerclusterer_packed.js'}
-
+= render :partial => 'shared/segments', :locals => { :segments => @segments }

@@ -13,13 +13,13 @@ class BikewaySegmentsController < ApplicationController
   end
 
   def show
-    @segment = BikewaySegment.find params[:id]
+    @segments = [BikewaySegment.find(params[:id])]
     @kml_url = url_for(:controller => :bikeway_segments, :action => :show, :format => :kml)
 
     respond_to do |format|
       format.html
       format.kml {
-        render template: 'bikeway_segments/kml'
+        render template: 'shared/kml'
       }
     end
   end

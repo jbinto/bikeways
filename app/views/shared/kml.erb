@@ -3,7 +3,7 @@
 <Document>
   <%= render 'shared/kml_styles' %>
 
-  <% @bikeway.bikeway_segments.each do |segment| %>
+  <% @segments.each do |segment| %>
     <Placemark>
       <name><%= segment.id %></name>
       <styleUrl>#<%= segment.style_id %></styleUrl>
