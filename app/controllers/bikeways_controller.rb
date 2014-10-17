@@ -1,6 +1,6 @@
 class BikewaysController < ApplicationController
   def index
-    @bikeways = Bikeway.select(:id, :bikeway_name, :portion)
+    @bikeways = Bikeway.all.order('length_m DESC')
   end
 
   def show

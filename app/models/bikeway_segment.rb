@@ -1,3 +1,4 @@
+require 'gis_tools'
 # == Schema Information
 #
 # Table name: bikeway_segments
@@ -22,11 +23,15 @@
 #  bikeway_type                :string(255)
 #  created_at                  :datetime
 #  updated_at                  :datetime
-#  geom                        :spatial          geometry, 2019
+#  geom                        :spatial          geometry, 4326
+#  bikeway_id                  :integer
+#  length_m                    :float
 #
 
 class BikewaySegment < ActiveRecord::Base
   belongs_to :bikeway
+
+  before_save :assign_length_m_property
 
   def self.all_feature_ids
     BikewaySegment.pluck(:city_linear_feature_name_id).uniq.sort
@@ -57,11 +62,22 @@ class BikewaySegment < ActiveRecord::Base
     ).first
   end
 
+  # XXX: this is view level stuff, move it to a helper or something
+  # certainly not in the model.
   def style_id
     STYLE_ID_CODES[self.bikeway_type]
   end
 
+  def length_calculated
+    GISTools.length_m(self.geom)
+  end
+
   # TODO: next_feature
   # or: separate next into "this_feature_only: true/fale"
+
+  private
+  def assign_length_m_property
+    self[:length_m] = self.length_calculated
+  end
 
 end
