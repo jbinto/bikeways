@@ -57,6 +57,10 @@ class BikewaySegment < ActiveRecord::Base
     ).first
   end
 
+  def style_id
+    STYLE_ID_CODES[self.bikeway_type]
+  end
+
   # TODO: next_feature
   # or: separate next into "this_feature_only: true/fale"
 
