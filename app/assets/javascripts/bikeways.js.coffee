@@ -29,6 +29,7 @@ APP.bikeway_segments =
       opts =
         # see https://developers.google.com/maps/documentation/javascript/reference?hl=fr#MapOptions
         provider: {
+          scrollwheel: false,
           zoom: 16
         }
         internal: { id: 'map' }
@@ -54,6 +55,7 @@ APP.bikeways =
       opts =
         # see https://developers.google.com/maps/documentation/javascript/reference?hl=fr#MapOptions
         provider: {
+          scrollwheel: false,
           zoom: 16
         }
         internal: { id: 'map' }
