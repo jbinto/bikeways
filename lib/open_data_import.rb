@@ -102,16 +102,17 @@ class OpenDataImport
 
       # walk through each & every single BikewaySegment using FeatureWalker
       for id in BikewaySegment.all_feature_ids
+        full_street_name = BikewaySegment.full_street_name(id)
         walker = FeatureWalker.new(feature_id: id)
-        paths = walker.paths
+        portions = walker.paths
 
         # console debugging
-        path_ids = paths.map { |list| list.map { |path| path.id } }  # e.g. --> [[1561, 1601, 1602], [6124]]
+        nested_segment_ids = portions.map { |list| list.map { |path| path.id } }  # e.g. --> [[1561, 1601, 1602], [6124]]
         # e.g:
-        #   lfn_id=3786 full_street_name=Kingston Rd num_paths=6 paths:
+        #   lfn_id=3786 full_street_name=Kingston Rd num_portions=6 portions:
         #    --> [[1593, 1331, 1330, 1329, 1328, 1390, 1389, 1388], [1810], [1964, 6602], [2419, 2393, 2324, 4446, 2306], [5650, 2464, 2379, 2360], [4605]]
-        puts "lfn_id=#{id} full_street_name=#{BikewaySegment.full_street_name(id)} num_paths=#{paths.length} paths:"
-        puts "  --> #{path_ids}"
+        puts "lfn_id=#{id} full_street_name=#{full_street_name} num_portions=#{portions.length} portions:"
+        puts "  --> #{nested_segment_ids}"
 
         # Since there are discontiguous routes that share the same street name, we have to divide
         # each distinct street name into contiguous portions. For example, there's a bike lane
@@ -120,7 +121,7 @@ class OpenDataImport
         # counted as such.
 
         portion = 1
-        paths.each do |segments|
+        portions.each do |segments|
           # create the Bikeway record for this portion
           bikeway = Bikeway.create do |b|
             b.bikeway_name = segments.first.full_street_name
@@ -142,6 +143,8 @@ class OpenDataImport
       end
     end # transaction
   end #def
+
+
 end #class
 
 
