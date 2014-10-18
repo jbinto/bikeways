@@ -219,6 +219,8 @@ GEM
     rgeo-ar (0.7.0)
       activerecord (~> 4.1)
       rgeo (>= 0.3.20)
+    rgeo-geojson (0.3.1)
+      rgeo (~> 0.3)
     rgeo-shapefile (0.2.3)
       dbf (>= 1.7.0)
       rgeo (>= 0.3.3)
@@ -332,6 +334,7 @@ DEPENDENCIES
   rb-fsevent
   rb-inotify
   rgeo
+  rgeo-geojson (~> 0.3.1)
   rgeo-shapefile
   rspec-rails
   rubyzip (>= 1.0.0)

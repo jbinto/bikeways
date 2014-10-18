@@ -53,6 +53,7 @@ gem 'activerecord-postgis-adapter',
   github: 'neighborland/activerecord-postgis-adapter'
 
 gem 'rgeo'
+gem 'rgeo-geojson', '~> 0.3.1'
 
 gem 'jquery-datatables-rails', '~> 2.2.3'
 

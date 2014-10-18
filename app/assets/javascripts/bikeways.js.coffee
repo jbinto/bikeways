@@ -4,6 +4,25 @@
 APP.init = ->
   console.log "application"
 
+APP.init_map = ->
+  console.log "APP.init_map"
+  kmlUrl = $('#map').data('kml-url')
+  handler = Gmaps.build('Google')
+  opts =
+    # see https://developers.google.com/maps/documentation/javascript/reference?hl=fr#MapOptions
+    provider: {
+      scrollwheel: false,
+      zoom: 16
+    }
+    internal: { id: 'map' }
+  handler.buildMap(opts, ->
+    kmls = handler.addKml(
+      { url: kmlUrl }
+    )
+    # handler.bounds.extendWith(markers)
+    # handler.fitMapToBounds()
+  )
+
 APP.bikeway_segments =
   init: ->
     $ ->
@@ -24,22 +43,7 @@ APP.bikeway_segments =
   show: ->
     $ ->
       console.log "enter bikeway_segments#show"
-      kmlUrl = $('#map').data('kml-url')
-      handler = Gmaps.build('Google')
-      opts =
-        # see https://developers.google.com/maps/documentation/javascript/reference?hl=fr#MapOptions
-        provider: {
-          scrollwheel: false,
-          zoom: 16
-        }
-        internal: { id: 'map' }
-      handler.buildMap(opts, ->
-        kmls = handler.addKml(
-          { url: kmlUrl }
-        )
-        # handler.bounds.extendWith(markers)
-        # handler.fitMapToBounds()
-      )
+      APP.init_map()
       console.log "exit bikeway_segments#show"
 
 APP.bikeways =
@@ -50,20 +54,11 @@ APP.bikeways =
   show: ->
     $ ->
       console.log "enter bikeways#show"
-      kmlUrl = $('#map').data('kml-url')
-      handler = Gmaps.build('Google')
-      opts =
-        # see https://developers.google.com/maps/documentation/javascript/reference?hl=fr#MapOptions
-        provider: {
-          scrollwheel: false,
-          zoom: 16
-        }
-        internal: { id: 'map' }
-      handler.buildMap(opts, ->
-        kmls = handler.addKml(
-          { url: kmlUrl }
-        )
-        # handler.bounds.extendWith(markers)
-        # handler.fitMapToBounds()
-      )
+      APP.init_map()
+      console.log "exit bikeways#show"
+
+  all: ->
+    $ ->
+      console.log "enter bikeways#show"
+      APP.init_map()
       console.log "exit bikeways#show"

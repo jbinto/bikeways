@@ -11,6 +11,10 @@ Bikeways::Application.routes.draw do
     end
   end
 
-  resources :bikeways
+  resources :bikeways do
+    collection do
+      get 'all'
+    end
+  end
 
 end
