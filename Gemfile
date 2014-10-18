@@ -74,3 +74,6 @@ gem 'httparty'
 gem 'rubyzip', '>= 1.0.0'
 gem 'rgeo-shapefile'
 gem 'dbf'
+
+gem 'jazz_hands', github: 'nixme/jazz_hands', branch: 'bring-your-own-debugger'
+gem 'pry-byebug'  
