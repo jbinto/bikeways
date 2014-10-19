@@ -40,22 +40,22 @@ class SegmentsDatatable
   def fetch_segments
     segments = Segment.order("#{sort_column} #{sort_direction}")
     segments = segments.page(page).per_page(per_page)
-    if params[:sSearch].present?
+    if params[:search][:value].present?
       where = '' \
         'full_street_name ilike :search' \
         ' or bikeway_type ilike :search' \
         ' or cast(id as text) ilike :search'
-      segments = segments.where(where, search: "%#{params[:sSearch]}%")
+      segments = segments.where(where, search: "%#{params[:search][:value]}%")
     end
     segments
   end
 
   def page
-    params[:iDisplayStart].to_i / per_page + 1
+    params[:start].to_i / per_page + 1
   end
 
   def per_page
-    params[:iDisplayLength].to_i > 0 ? params[:iDisplayLength].to_i : 10
+    params[:length].to_i > 0 ? params[:length].to_i : 10
   end
 
   def sort_column
@@ -69,11 +69,12 @@ class SegmentsDatatable
       "bikeway_type",
       "length_m"
     ]
-    columns[params[:iSortCol_0].to_i]
+    sort_col = params[:order]['0']['column'].to_i
+    columns[sort_col]
   end
 
   def sort_direction
-    params[:sSortDir_0] == "desc" ? "desc" : "asc"
+    params[:order]['0'][:dir] == "desc" ? "desc" : "asc"
   end
 
 end
