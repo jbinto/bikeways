@@ -1,19 +1,19 @@
 require 'bikeway_segments_datatable'
 
-class BikewaySegmentsController < ApplicationController
+class SegmentsController < ApplicationController
   def index
     @segments = nil
 
     respond_to do |format|
       format.html  # index.html.haml
       format.json {
-        render json: BikewaySegmentsDatatable.new(view_context)
+        render json: SegmentsDatatable.new(view_context)
       }
     end
   end
 
   def show
-    @segments = [BikewaySegment.find(params[:id])]
+    @segments = [Segment.find(params[:id])]
     @kml_url = url_for(:controller => :bikeway_segments, :action => :show, :format => :kml)
 
     respond_to do |format|
@@ -25,12 +25,12 @@ class BikewaySegmentsController < ApplicationController
   end
 
   def next
-    segment = BikewaySegment.find params[:id]
+    segment = Segment.find params[:id]
     redirect_to_segment segment.next
   end
 
   def prev
-    segment = BikewaySegment.find params[:id]
+    segment = Segment.find params[:id]
     redirect_to_segment segment.prev
   end
 

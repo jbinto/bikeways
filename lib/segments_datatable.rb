@@ -1,7 +1,7 @@
 # Adapted from http://railscasts.com/episodes/340-datatables?view=asciicast
 # All of this un-ruby-like hungarian notation comes from datatables.net - don't blame me ;)
 
-class BikewaySegmentsDatatable
+class SegmentsDatatable
   delegate :params, :link_to, to: :@view
 
   def initialize(view)
