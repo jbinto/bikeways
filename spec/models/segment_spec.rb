@@ -1,32 +1,3 @@
-# == Schema Information
-#
-# Table name: bikeway_segments
-#
-#  id                          :integer          not null, primary key
-#  city_rid                    :integer
-#  city_geo_id                 :integer
-#  city_linear_feature_name_id :integer
-#  city_object_id              :integer
-#  full_street_name            :string(255)
-#  address_left                :string(255)
-#  address_right               :string(255)
-#  odd_even_flag_left          :string(255)
-#  odd_even_flag_right         :string(255)
-#  lowest_address_left         :integer
-#  lowest_address_right        :integer
-#  highest_address_left        :integer
-#  highest_address_right       :integer
-#  from_intersection_id        :integer
-#  to_intersection_id          :integer
-#  street_classification       :string(255)
-#  bikeway_type                :string(255)
-#  created_at                  :datetime
-#  updated_at                  :datetime
-#  geom                        :spatial          geometry, 4326
-#  bikeway_id                  :integer
-#  length_m                    :float
-#
-
 require 'spec_helper'
 
 describe BikewaySegment do
@@ -57,38 +28,5 @@ describe BikewaySegment do
 
     expect(actual).to eq(expected)
   end
-
-  describe 'neighbour functions'
-
-    # A little fuzzy on let vs let!
-    let!(:different_before_first) { FactoryGirl.create(:bikeway_segment, :city_linear_feature_name_id => 300, :from_intersection_id => 500, :to_intersection_id => 1) }
-    let!(:first) { FactoryGirl.create(:bikeway_segment, :city_linear_feature_name_id => 1, :from_intersection_id => 1, :to_intersection_id => 2) }
-    let!(:second) { FactoryGirl.create(:bikeway_segment, :city_linear_feature_name_id => 1, :from_intersection_id => 2, :to_intersection_id => 1000) }
-    let!(:different_after_second) { FactoryGirl.create(:bikeway_segment, :city_linear_feature_name_id => 50, :from_intersection_id => 1000, :to_intersection_id => 1001) }
-
-
-    it "should be able to find it's next neighbour" do
-      actual = first.next
-      expected = second
-
-      expect(actual).to eq(expected)
-    end
-
-    it "should be able to find it's previous neighbour" do
-      actual = second.prev
-      expected = first
-
-      expect(actual).to eq(expected)
-    end
-
-    it "should return nil when it's next neighbor is another feature" do
-      actual = second.next
-      expect(actual).to be_nil
-    end
-
-    it "should return nil when it's previous neighbor is another feature" do
-      actual = first.prev
-      expect(actual).to be_nil
-    end
 
 end
