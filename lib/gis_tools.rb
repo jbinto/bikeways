@@ -36,12 +36,13 @@ class GISTools < ActiveRecord::Base
             max(highest_address_left) as highest_address_left,
             min(lowest_address_left) as lowest_address_left,
             min(lowest_address_right) as lowest_address_right
-          from bikeway_segments
+          from segments
           group by full_street_name, bikeway_type
     '
 
+    # note: Could also add sum(length_m) as an aggregate function here, if needed.
+
     result = self.connection.execute sanitize_sql([sql])
-    
     result.to_a
   end
 

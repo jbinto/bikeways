@@ -11,18 +11,18 @@ class OpenDataFile
 
   def download
     if File.exists?(@zipfile)
-      print "#{@zipfile} already exists"
+      #print "#{@zipfile} already exists"
       unless @force
-        puts ", please delete to redownload or use rake opendata:reset to start over"
+        puts "please delete to redownload or use rake opendata:reset to start over"
         return false
       end
     end
 
     FileUtils.mkdir_p OPENDATA_DIR
-    print "downloading #{@url} ... "
+    # print "downloading #{@url} ... "
     File.open(@zipfile, 'wb') do |f|
       len = f.write HTTParty.get(@url).parsed_response
-      puts "#{number_to_human_size(len)} received"
+      #puts "#{number_to_human_size(len)} received"
     end
 
     true
@@ -33,11 +33,11 @@ class OpenDataFile
       zip.each do |file|
         dest = File.join('vendor/opendata', file.to_s)
         if File.exists? dest
-          puts "already exists, skipping: #{file}"
+          #puts "already exists, skipping: #{file}"
           next
         end
 
-        puts "extracting: #{file}"
+        #puts "extracting: #{file}"
         file.extract File.join('vendor/opendata', file.to_s)
       end
     end
