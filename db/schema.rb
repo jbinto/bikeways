@@ -11,45 +11,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141017073543) do
+ActiveRecord::Schema.define(version: 20141019033236) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
   enable_extension "postgis"
 
-  create_table "bikeway_segments", force: true do |t|
-    t.integer  "city_rid"
-    t.integer  "city_geo_id"
-    t.integer  "city_linear_feature_name_id"
-    t.integer  "city_object_id"
+  create_table "segments", force: true do |t|
     t.string   "full_street_name"
-    t.string   "address_left"
-    t.string   "address_right"
-    t.string   "odd_even_flag_left"
-    t.string   "odd_even_flag_right"
     t.integer  "lowest_address_left"
     t.integer  "lowest_address_right"
     t.integer  "highest_address_left"
     t.integer  "highest_address_right"
-    t.integer  "from_intersection_id"
-    t.integer  "to_intersection_id"
-    t.string   "street_classification"
     t.string   "bikeway_type"
+    t.float    "length_m"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.spatial  "geom",                        limit: {:srid=>4326, :type=>"geometry"}
-    t.integer  "bikeway_id"
-    t.float    "length_m"
-  end
-
-  add_index "bikeway_segments", ["bikeway_id"], :name => "index_bikeway_segments_on_bikeway_id"
-
-  create_table "bikeways", force: true do |t|
-    t.string  "bikeway_name"
-    t.integer "portion"
-    t.string  "description"
-    t.integer "length_m"
-    t.integer "bikeway_route_number"
+    t.spatial  "geom",                  limit: {:srid=>4326, :type=>"geometry"}
   end
 
   create_table "users", force: true do |t|
