@@ -1,6 +1,6 @@
 # Adapted from https://github.com/jbinto/rails4-sample-app-capistrano/blob/master/config/deploy.rb
 
-lock '3.1.0'
+lock '3.2.1'
 
 set :application, 'bikeways'
 set :repo_url, 'https://github.com/jbinto/bikeways.git'
