@@ -2,18 +2,21 @@
 # All of this un-ruby-like hungarian notation comes from datatables.net - don't blame me ;)
 
 class SegmentsDatatable
-  delegate :params, :link_to, to: :@view
+  #include Rails.application.routes.url_helpers
 
-  def initialize(view)
+  delegate :params, :link_to, :root_path, to: :@view
+
+  def initialize(view, segments)
     @view = view
+    @segments_in = segments
   end
 
   def as_json(options = {})
     {
-      sEcho: params[:sEcho].to_i,
-      iTotalRecords: Segment.count,
-      iTotalDisplayRecords: segments.total_entries,
-      aaData: data
+      draw: params[:draw].to_i,
+      recordsTotal: Segment.count,
+      recordsFiltered: segments.total_entries,
+      data: data
     }
   end
 
@@ -27,7 +30,8 @@ class SegmentsDatatable
         ERB::Util.h(segment.lowest_address_right),
         ERB::Util.h(segment.highest_address_left),
         ERB::Util.h(segment.highest_address_right),
-        ERB::Util.h(segment.bikeway_type),
+        #ERB::Util.h(segment.bikeway_type),
+        link_to(segment.bikeway_type, root_path(:bikeway_type => segment.bikeway_type)),
         ERB::Util.h(segment.length_m)
       ]
     end
@@ -38,16 +42,17 @@ class SegmentsDatatable
   end
 
   def fetch_segments
-    segments = Segment.order("#{sort_column} #{sort_direction}")
-    segments = segments.page(page).per_page(per_page)
+    @segments = @segments_in
+    @segments = @segments.order("#{sort_column} #{sort_direction}")
+    @segments = @segments.page(page).per_page(per_page)
     if params[:search][:value].present?
       where = '' \
         'full_street_name ilike :search' \
         ' or bikeway_type ilike :search' \
         ' or cast(id as text) ilike :search'
-      segments = segments.where(where, search: "%#{params[:search][:value]}%")
+      @segments = @segments.where(where, search: "%#{params[:search][:value]}%")
     end
-    segments
+    @segments
   end
 
   def page

@@ -2,7 +2,7 @@
 
 = render :partial => 'shared/segments', :locals => { :segments => @segments }
 
-%table#segments.table.table-hover{ data: { source: segments_url(format: 'json') }}
+%table#segments.table.table-hover{ data: { source: @json_url }}
   %thead
     %tr
       %th id
