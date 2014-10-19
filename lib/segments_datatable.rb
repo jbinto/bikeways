@@ -44,8 +44,7 @@ class SegmentsDatatable
       where = '' \
         'full_street_name ilike :search' \
         ' or bikeway_type ilike :search' \
-        ' or street_classification ilike :search' \
-        ' or cast(city_linear_feature_name_id as text) ilike :search'
+        ' or cast(id as text) ilike :search'
       segments = segments.where(where, search: "%#{params[:sSearch]}%")
     end
     segments
