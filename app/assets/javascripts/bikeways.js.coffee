@@ -28,7 +28,8 @@ APP._initGoogleMaps = ->
     # see https://developers.google.com/maps/documentation/javascript/reference?hl=fr#MapOptions
     provider: {
       scrollwheel: false,
-      zoom: 16
+      zoom: 16,
+      mapTypeId: google.maps.MapTypeId.TERRAIN
     }
     internal: { id: 'map' }
   handler.buildMap(opts, ->
@@ -45,5 +46,5 @@ APP._initDataTables = ->
     processing: true
     serverSide: true
     ajax: $('#segments').data('source')
-    stateSave: true
+    stateSave: false
     deferRender: true
