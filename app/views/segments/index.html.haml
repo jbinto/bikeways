@@ -1,0 +1,16 @@
+%h3 Bikeway Segments
+
+= render :partial => 'shared/segments', :locals => { :segments => @segments }
+
+%table#segments.table.table-hover{ data: { source: @json_url }}
+  %thead
+    %tr
+      %th id
+      %th full_street_name
+      %th lowest_address_left
+      %th lowest_address_right
+      %th highest_address_left
+      %th highest_address_right
+      %th bikeway_type
+      %th length_m
+  %tbody

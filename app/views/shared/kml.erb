@@ -5,7 +5,7 @@
 
   <% @segments.each do |segment| %>
     <Placemark>
-      <name><%= segment.id %></name>
+      <name><%= segment.to_s %></name>
       <styleUrl>#<%= segment.style_id %></styleUrl>
       <%= raw segment.kml %>
     </Placemark>

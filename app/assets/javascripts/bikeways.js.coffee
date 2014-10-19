@@ -4,66 +4,47 @@
 APP.init = ->
   console.log "application"
 
-APP.bikeway_segments =
+APP.segments =
   init: ->
     $ ->
-      console.log "bikeway_segments (controller)"
+      console.log "segments (controller)"
 
   index: ->
     $ ->
-      console.log "enter bikeway_segments#index"
-      $('#segments').dataTable
-        sDom: 'ilrptf'  # http://www.datatables.net/ref#sDom
-        bProcessing: true
-        bServerSide: true
-        sAjaxSource: $('#segments').data('source')
-        bStateSave: true
-        bDeferRender: true
-      console.log "exit bikeway_segments#index"
+      console.log "enter segments#index"
+      APP._initGoogleMaps()
+      APP._initDataTables()
+      console.log "exit segments#index"
 
   show: ->
     $ ->
-      console.log "enter bikeway_segments#show"
-      kmlUrl = $('#map').data('kml-url')
-      handler = Gmaps.build('Google')
-      opts =
-        # see https://developers.google.com/maps/documentation/javascript/reference?hl=fr#MapOptions
-        provider: {
-          scrollwheel: false,
-          zoom: 16
-        }
-        internal: { id: 'map' }
-      handler.buildMap(opts, ->
-        kmls = handler.addKml(
-          { url: kmlUrl }
-        )
-        # handler.bounds.extendWith(markers)
-        # handler.fitMapToBounds()
-      )
-      console.log "exit bikeway_segments#show"
+      console.log "enter segments#show"
+      console.log "exit segments#show"
 
-APP.bikeways =
-  init: ->
-    $ ->
-      console.log "bikeways (controller)"
+APP._initGoogleMaps = ->
+  kmlUrl = $('#map').data('kml-url')
+  handler = Gmaps.build('Google')
+  opts =
+    # see https://developers.google.com/maps/documentation/javascript/reference?hl=fr#MapOptions
+    provider: {
+      scrollwheel: false,
+      zoom: 16,
+      mapTypeId: google.maps.MapTypeId.TERRAIN
+    }
+    internal: { id: 'map' }
+  handler.buildMap(opts, ->
+    kmls = handler.addKml(
+      { url: kmlUrl }
+    )
+    # handler.bounds.extendWith(markers)
+    # handler.fitMapToBounds()
+  )
 
-  show: ->
-    $ ->
-      console.log "enter bikeways#show"
-      kmlUrl = $('#map').data('kml-url')
-      handler = Gmaps.build('Google')
-      opts =
-        # see https://developers.google.com/maps/documentation/javascript/reference?hl=fr#MapOptions
-        provider: {
-          scrollwheel: false,
-          zoom: 16
-        }
-        internal: { id: 'map' }
-      handler.buildMap(opts, ->
-        kmls = handler.addKml(
-          { url: kmlUrl }
-        )
-        # handler.bounds.extendWith(markers)
-        # handler.fitMapToBounds()
-      )
-      console.log "exit bikeways#show"
+APP._initDataTables = ->
+  $('#segments').dataTable
+    dom: 'iflrpt'  # http://www.datatables.net/ref#sDom
+    processing: true
+    serverSide: true
+    ajax: $('#segments').data('source')
+    stateSave: false
+    deferRender: true

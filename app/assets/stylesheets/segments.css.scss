@@ -20,3 +20,7 @@
 }
 
 .wide { width: 100%; }
+
+#segments_filter input {
+  @extend .input-lg;
+}

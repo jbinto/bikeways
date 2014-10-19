@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.1.2'
+ruby '2.1.3'
 
 # It's a little roundabout.
 # Since Rails 4.1, secrets defined in secrets.yml. But in production, they go to ENV.
@@ -50,9 +50,10 @@ group :test do
 end
 
 gem 'activerecord-postgis-adapter',
-  github: 'neighborland/activerecord-postgis-adapter'
+  github: 'rgeo/activerecord-postgis-adapter'
 
 gem 'rgeo'
+gem 'rgeo-geojson', '~> 0.3.1'
 
 gem 'jquery-datatables-rails', '~> 2.2.3'
 
@@ -77,3 +78,6 @@ gem 'dbf'
 
 gem 'jazz_hands', github: 'nixme/jazz_hands', branch: 'bring-your-own-debugger'
 gem 'pry-byebug'  
+
+gem 'ruby-progressbar'
+gem 'has_scope'

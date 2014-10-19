@@ -1,5 +1,5 @@
 require 'open_data_import'
-require 'open_data_stats'
+#require 'open_data_stats'
 
 namespace :opendata do
   desc "Downloads the Bikeways ESRI shape file from the Toronto open data catalogue (MTM3)"
