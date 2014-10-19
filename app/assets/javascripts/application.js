@@ -6,7 +6,7 @@
 //= require gistyle
 //= require_tree .
 
-// XXX make this only required on the bikeway_segments#index page
+// XXX make this only required on the segments#index page
 //= require dataTables/jquery.dataTables
 //= require dataTables/bootstrap/3/jquery.dataTables.bootstrap
 
