@@ -80,3 +80,4 @@ gem 'jazz_hands', github: 'nixme/jazz_hands', branch: 'bring-your-own-debugger'
 gem 'pry-byebug'  
 
 gem 'ruby-progressbar'
+gem 'has_scope'

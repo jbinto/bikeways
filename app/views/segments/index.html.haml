@@ -1,6 +1,8 @@
 %h3 Bikeway Segments
 
-%table#segments.table-condensed.table-hover{ data: { source: segments_url(format: 'json') }}
+= render :partial => 'shared/segments', :locals => { :segments => @segments }
+
+%table#segments.table.table-hover{ data: { source: segments_url(format: 'json') }}
   %thead
     %tr
       %th id
@@ -12,4 +14,3 @@
       %th bikeway_type
       %th length_m
   %tbody
-

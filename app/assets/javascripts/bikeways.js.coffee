@@ -41,7 +41,7 @@ APP._initGoogleMaps = ->
 
 APP._initDataTables = ->
   $('#segments').dataTable
-    sDom: 'ilrptf'  # http://www.datatables.net/ref#sDom
+    sDom: 'ilrfpt'  # http://www.datatables.net/ref#sDom
     bProcessing: true
     bServerSide: true
     sAjaxSource: $('#segments').data('source')

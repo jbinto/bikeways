@@ -1,45 +1,25 @@
 require 'segments_datatable'
 
 class SegmentsController < ApplicationController
+  has_scope :bikeway_type
+
   def index
-    @segments = nil
+    @segments = apply_scopes(Segment).all
+    @kml_url = url_for current_scopes.merge(:controller => :segments, :action => :index, :format => :kml)
 
     respond_to do |format|
       format.html  # index.html.haml
       format.json {
         render json: SegmentsDatatable.new(view_context)
       }
-    end
-  end
-
-  def show
-    @segments = [Segment.find(params[:id])]
-    @kml_url = url_for(:controller => :segments, :action => :show, :format => :kml)
-
-    respond_to do |format|
-      format.html
       format.kml {
         render template: 'shared/kml'
       }
     end
   end
 
-  # def next
-  #   segment = Segment.find params[:id]
-  #   redirect_to_segment segment.next
-  # end
-
-  # def prev
-  #   segment = Segment.find params[:id]
-  #   redirect_to_segment segment.prev
-  # end
-
-  # def redirect_to_segment(segment)
-  #   if segment.blank?
-  #     redirect_to :back, alert: "That's as far as you can go."
-  #   else
-  #     redirect_to segment
-  #   end
-  # end
+  def show
+    raise 'oops'
+  end
 
 end

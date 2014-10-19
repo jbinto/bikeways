@@ -3,29 +3,29 @@
     .google-map-canvas
       #map{data: { kml_url: @kml_url }}
 
-.row
-  .col-xs-12
-    %table.table
-      %thead
-        %th id
-        %th full_street_name
-        %th lowest_address_left
-        %th lowest_address_right
-        %th highest_address_left
-        %th highest_address_right
-        %th bikeway_type
-        %th length_m
-      %tbody
-      - segments.each do |segment|
-        %tr
-          %td= link_to segment.id, segment
-          %td= segment.full_street_name
-          %td= segment.lowest_address_left
-          %td= segment.lowest_address_right
-          %td= segment.highest_address_left
-          %td= segment.highest_address_right
-          %td= segment.bikeway_type
-          %td= segment.length_m
+/ .row
+/   .col-xs-12
+/     %table.table
+/       %thead
+/         %th id
+/         %th full_street_name
+/         %th lowest_address_left
+/         %th lowest_address_right
+/         %th highest_address_left
+/         %th highest_address_right
+/         %th bikeway_type
+/         %th length_m
+/       %tbody
+/       - segments.each do |segment|
+/         %tr
+/           %td= link_to segment.id, segment
+/           %td= segment.full_street_name
+/           %td= segment.lowest_address_left
+/           %td= segment.lowest_address_right
+/           %td= segment.highest_address_left
+/           %td= segment.highest_address_right
+/           %td= segment.bikeway_type
+/           %td= segment.length_m
 
 %script{src: '//maps.google.com/maps/api/js?v=3.13&sensor=false&libraries=geometry'}
 %script{src: '//google-maps-utility-library-v3.googlecode.com/svn/tags/markerclustererplus/2.0.14/src/markerclusterer_packed.js'}

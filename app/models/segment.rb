@@ -2,6 +2,8 @@ require 'gis_tools'
 
 class Segment < ActiveRecord::Base
 
+  scope :bikeway_type, ->(type) { where("bikeway_type = ?", type) }
+
   def self.total_length_km
     (Segment.sum(:length_m)/1024).round(2)
   end
@@ -18,7 +20,7 @@ class Segment < ActiveRecord::Base
   end
 
   def to_s
-    "#{full_street_name} (#{length_m.round(1)} m)"
+    "#{full_street_name} (#{bikeway_type}, #{length_m.round(1)} m)"
   end
 
 end
