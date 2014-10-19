@@ -28,6 +28,7 @@ class OpenDataImport
   def reset
     # XXX: ugly, need some sort of state machine here?
     @bikeway_file.download && @bikeway_file.unzip && import_bikeway_file
+    flatten_kml
     populate_bikeway_table
   end
 
@@ -77,6 +78,32 @@ class OpenDataImport
           end
         end
       end
+    end
+  end
+
+  def flatten_kml
+    # The city provided KML can be simplified (higher granularity)
+    # by representing each contiguous route as a single linestring.
+
+    # We lose some metadata, but it makes the volume more manageable.
+
+    BikewaySegment.transaction do
+      # Grab the coarse-grained segments...
+      flattened_segments = GISTools::street_union
+      puts "Flattening BikewaySegment geometries from #{BikewaySegment.count} to #{flattened_segments.count}"
+
+      # ...delete the original city's fine-grained data (appx 6800)...
+      puts "Deleting #{BikewaySegment.count} BikewaySegment records..."
+      BikewaySegment.delete_all
+
+      # ...and now add the coarse-grained (appx 800).
+      flattened_segments.each do |segment|
+        BikewaySegment.create do |new_segment|
+          new_segment.update_attributes segment
+        end
+      end
+
+      puts "Added #{BikewaySegment.count} flattened BikewaySegment records."
     end
   end
 

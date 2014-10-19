@@ -16,21 +16,32 @@ class GISTools < ActiveRecord::Base
   end
 
   def self.street_union
-    # https://gis.stackexchange.com/questions/16698/join-intersecting-lines-with-postgis
-    sql = 'select
-            (st_dump(geom)).geom as geom,
+    # This query simplifies the geometry significantly, by merging adjacent lines
+    # of the same bikeway type.
+
+    # It will reduce the number of records from about 6,800 to about 900.
+
+    # The tradeoff is we lose granularity.
+    # The only thing we can keep is the high/low address, the bikeway type, and optionally
+    # the street classification.
+
+    # Adapted from https://gis.stackexchange.com/questions/16698/join-intersecting-lines-with-postgis
+    sql = '
+          select
+            st_linemerge(st_union(geom)) as geom,
             full_street_name,
-            bikeway_type
-          from (
-            select
-              st_linemerge(st_union(geom)) as geom,
-              full_street_name,
-              bikeway_type
-            from bikeway_segments
-            group by "full_street_name", "bikeway_type"
-          ) as street_union'
+            bikeway_type,
+            /* street_classification, */
+            max(highest_address_right) as highest_address_right,
+            max(highest_address_left) as highest_address_left,
+            min(lowest_address_left) as lowest_address_left,
+            min(lowest_address_right) as lowest_address_right
+          from bikeway_segments
+          group by full_street_name, bikeway_type
+    '
 
     result = self.connection.execute sanitize_sql([sql])
+    
     result.to_a
   end
 
