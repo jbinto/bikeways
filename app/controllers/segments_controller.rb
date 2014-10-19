@@ -2,6 +2,7 @@ require 'segments_datatable'
 
 class SegmentsController < ApplicationController
   has_scope :bikeway_type
+  has_scope :full_street_name
 
   def index
     @segments = apply_scopes(Segment).all
