@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe BikewaySegment do
+describe Segment do
 
   # XXX HACK FIXME:
   # This is a pretty brittle test.
@@ -20,7 +20,7 @@ describe BikewaySegment do
   # It does function as a fine smoke test to ensure the SRID is correct.
 
   it "should be able to render itself as KML" do
-    segment = FactoryGirl.create(:bikeway_segment,
+    segment = FactoryGirl.create(:segment,
       :geom => "MULTILINESTRING ((-79.521209665 43.590895067, -79.522533939 43.590800049))")
 
     actual = segment.kml

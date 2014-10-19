@@ -30,23 +30,12 @@
 # Read about factories at https://github.com/thoughtbot/factory_girl
 
 FactoryGirl.define do
-  factory :bikeway_segment do
-    city_rid 1
-    city_geo_id 1
-    city_linear_feature_name_id 1
-    city_object_id 1
+  factory :segment do
     full_street_name "Yonge St"
-    address_left "34-40"
-    address_right "41-49"
-    odd_even_flag_left "E"
-    odd_even_flag_right "O"
     lowest_address_left 34
     lowest_address_right 41
     highest_address_left 40
     highest_address_right 49
-    from_intersection_id 10000
-    to_intersection_id 20000
-    street_classification "Arterial"
     bikeway_type "Bike Lane"
     geom "MULTILINESTRING ((-79.521209665 43.590895067, -79.522533939 43.590800049))"
     length_m 250.0
