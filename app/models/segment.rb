@@ -20,8 +20,32 @@ class Segment < ActiveRecord::Base
     STYLE_ID_CODES[self.bikeway_type]
   end
 
+  def name_with_range
+    "#{range} #{full_street_name}"
+  end
+
+  def description
+    "#{name_with_range} (#{bikeway_type}, #{length_m.round(1)} m)"
+  end
+
   def to_s
-    "#{full_street_name} (#{bikeway_type}, #{length_m.round(1)} m)"
+    description
+  end
+
+  def range
+    max = [highest_address_left, highest_address_right].reject { |n| nil_or_zero?(n) }.max
+    min = [lowest_address_left, lowest_address_right].reject { |n| nil_or_zero?(n)  }.min
+
+    if nil_or_zero?(min) && nil_or_zero?(max)
+      nil
+    else
+      "#{min}-#{max}"
+    end
+  end
+
+  private
+  def nil_or_zero?(n)
+    n.nil? || n == 0
   end
 
 end

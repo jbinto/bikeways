@@ -34,8 +34,8 @@ class GISTools < ActiveRecord::Base
             /* street_classification, */
             max(highest_address_right) as highest_address_right,
             max(highest_address_left) as highest_address_left,
-            min(lowest_address_left) as lowest_address_left,
-            min(lowest_address_right) as lowest_address_right
+            min(nullif(lowest_address_left, 0)) as lowest_address_left,
+            min(nullif(lowest_address_right, 0)) as lowest_address_right
           from segments
           group by full_street_name, bikeway_type
     '

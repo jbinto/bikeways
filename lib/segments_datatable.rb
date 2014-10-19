@@ -25,7 +25,7 @@ class SegmentsDatatable
     segments.map do |segment|
       [
         ERB::Util.h(segment.id),
-        link_to(segment.full_street_name, root_path(:full_street_name => segment.full_street_name)),
+        link_to(segment.name_with_range, root_path(:full_street_name => segment.full_street_name)),
         ERB::Util.h(segment.lowest_address_left),
         ERB::Util.h(segment.lowest_address_right),
         ERB::Util.h(segment.highest_address_left),
