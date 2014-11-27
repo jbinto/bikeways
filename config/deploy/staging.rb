@@ -2,6 +2,7 @@ set :stage, :staging
 set :branch, "envs/staging"
 set :deploy_user, "staging0"
 set :rails_env, :staging
+set :rbenv_ruby, '2.1.5'
 
 server 'staging.416.bike', user: fetch(:deploy_user), roles: %w{web app db}, primary: true
 
