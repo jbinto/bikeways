@@ -34,9 +34,11 @@ Prerequisites:
 * Postgresql 9.3.5
 * PostGIS 2.1.4
 
-For development, I've installed all of these on my Mac manually. 
+I've installed these on my Mac manually. 
 
 For ruby, I use `ruby-install` and `chruby` from Homebrew.
+For [Pow](http://pow.cx/), get it from the site, and use [my .powconfig](https://raw.githubusercontent.com/jbinto/dotfiles/a1a16b3a1bd9d4611aa5a360666293bbdf9fdd56/.powconfig).
+For [Powder](https://github.com/rodreegez/powder), get it from from rubygems.
 
 For postgresql:
 
@@ -50,7 +52,7 @@ launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
 createuser --superuser bikeways
 ```
 
-For OS X, install [pow](http://pow.cx/) and [powder](https://github.com/rodreegez/powder).
+Now for bikeways:
 
 ```
 git clone https://github.com/jbinto/bikeways.git
