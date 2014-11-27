@@ -1,11 +1,11 @@
 # Adapted from https://github.com/jbinto/rails4-sample-app-capistrano/blob/master/config/deploy.rb
 
-lock '3.2.1'
+lock '3.3.3'
 
 set :application, 'bikeways'
 set :repo_url, 'https://github.com/jbinto/bikeways.git'
 
-set :deploy_user, 'gear'
+#set :deploy_user, 'gear'
 
 # See https://github.com/capistrano/rbenv#usage for details
 # on rbenv boilerplate.
