@@ -23,16 +23,32 @@ See the [doc](https://github.com/jbinto/bikeways/tree/master/doc) directory for 
 * [Open Data - Bikeways](http://www1.toronto.ca/wps/portal/contentonly?vgnextoid=9ecd5f9cd70bb210VgnVCM1000003dd60f89RCRD&vgnextchannel=1a66e03bb8d1e310VgnVCM10000071d60f89RCRD) (last updated ~~March~~ September 2014)
 
 
-## Usage (development)
+## Usage (development on OS X)
+
+*Note: It is also possible to use Vagrant, see instructions for staging/production below.*
 
 Prerequisites:
 
-* Ruby 2.1.1
-* Rails 4.1
-* Postgresql 9.3
-* PostGIS 2.1.1
+* Ruby 2.1.5
+* Rails 4.1.8
+* Postgresql 9.3.5
+* PostGIS 2.1.4
 
-For development, I've installed all of these on my Mac manually. It is also possible to use Vagrant, see instructions for staging/production below.
+For development, I've installed all of these on my Mac manually. 
+
+For ruby, I use `ruby-install` and `chruby` from Homebrew.
+
+For postgresql:
+
+```
+brew install postgresql postgis
+
+# start PG on launch - from `brew info postgresql` (note: won't work in tmux!):
+ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
+launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
+
+createuser --superuser bikeways
+```
 
 For OS X, install [pow](http://pow.cx/) and [powder](https://github.com/rodreegez/powder).
 
