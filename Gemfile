@@ -1,12 +1,12 @@
 source 'https://rubygems.org'
-ruby '2.1.3'
+ruby '2.1.5'
 
 # It's a little roundabout.
 # Since Rails 4.1, secrets defined in secrets.yml. But in production, they go to ENV.
 # Using this gem, ENV will be populated with the contents of the .env file.
 gem 'dotenv-rails'
 
-gem 'rails', '4.1.0'
+gem 'rails', '4.1.8'
 gem 'sass-rails', '~> 4.0.3'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
