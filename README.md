@@ -85,7 +85,7 @@ To deploy, run:
 cap staging deploy
 ```
 
-Note: The specs are **run locally**, not on the remote server (seems strange, but it's also strange to have a test runner on a production server). If there are spec troubles, ensure you are in the Rails root and run `RAILS_ENV=test bundle exec db:reset`, this should fix things.
+Note: The specs are **run locally**, not on the remote server (seems strange, but it's also strange to have a test runner on a production server). If there are spec troubles, ensure you are in the Rails root and run `bundle exec rake test:all:db`, this should fix things.
 
 The deploy command "should" perform all necessary work if starting from scratch.
 
